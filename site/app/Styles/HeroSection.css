@@ -1,6 +1,7 @@
 /* Reset & Body */
 body {
     margin: 0;
+    padding: 0;
     background-color: #E3E2DF; /* Soft pastel */
     color: #2d3748;
     font-family: 'Segoe UI', sans-serif;
