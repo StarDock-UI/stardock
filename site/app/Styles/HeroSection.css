@@ -1,0 +1,117 @@
+
+/* Body background */
+body {
+    margin: 0;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+.hero-section {
+    background-color: #0f172a;
+    color: white;
+    padding: 6rem 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #1e293b;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #3b82f6;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.primary {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background-color: #2563eb;
+  }
+  
+  .btn.secondary {
+    background-color: #1e293b;
+    color: white;
+  }
+  
+  .btn.secondary:hover {
+    background-color: #334155;
+  }
+  
+  .install-box {
+    background-color: #1e293b;
+    padding: 0.75rem 1rem;
+    font-family: monospace;
+    color: #93c5fd;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .feature-card {
+    background-color: #1e293b;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional image styling */
+  .hero-image img {
+    margin-top: 3rem;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  }
+  

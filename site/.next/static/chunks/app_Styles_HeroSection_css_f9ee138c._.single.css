@@ -1,0 +1,115 @@
+/* [project]/app/Styles/HeroSection.css [app-client] (css) */
+body {
+  color: #e2e8f0;
+  background-color: #0f172a;
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+}
+
+.hero-section {
+  color: #fff;
+  text-align: center;
+  background-color: #0f172a;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6rem 1.5rem;
+  display: flex;
+}
+
+.container {
+  background-color: #1e293b;
+  border-radius: 12px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 24px #0006;
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.hero-subtitle {
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.hero-buttons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.btn.primary {
+  color: #fff;
+  background-color: #3b82f6;
+}
+
+.btn.primary:hover {
+  background-color: #2563eb;
+}
+
+.btn.secondary {
+  color: #fff;
+  background-color: #1e293b;
+}
+
+.btn.secondary:hover {
+  background-color: #334155;
+}
+
+.install-box {
+  color: #93c5fd;
+  background-color: #1e293b;
+  border-radius: 6px;
+  margin: 2rem 0;
+  padding: .75rem 1rem;
+  font-family: monospace;
+  display: inline-block;
+}
+
+.features {
+  text-align: left;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.feature-card {
+  color: #e2e8f0;
+  background-color: #1e293b;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.hero-image img {
+  border-radius: 12px;
+  max-width: 100%;
+  margin-top: 3rem;
+  box-shadow: 0 4px 24px #0000004d;
+}
+
+/*# sourceMappingURL=app_Styles_HeroSection_css_f9ee138c._.single.css.map*/
