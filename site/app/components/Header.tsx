@@ -1,30 +1,32 @@
+'use client';
+import React, { useState } from 'react';
+import '../Styles/Header.css';
 import Link from 'next/link';
-import React from 'react';
-import styles from './Header.module.css';
 
 const Header = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	const handleMobileMenuToggle = () => {
+		setIsMobile(!isMobile);
+	};
+
 	return (
-		<div style={styles.header}>
-			<div>
-				<h1>StarDock</h1>
+		<header className='header'>
+			<div className='navbar-container'>
+				<div className='logo'>
+					<Link href='/'>StarDock</Link>
+				</div>
+
+				<nav className={`navbar ${isMobile ? 'active' : ''}`}>
+					<Link href='/docs'>Docs</Link>
+					<Link href='/docs'>Classes</Link>
+					<Link href='/components'>Components</Link>
+					<Link href='/docs/get-started'>
+						<button className='cta'>Get Started</button>
+					</Link>
+				</nav>
 			</div>
-			<nav>
-				<ul>
-					<li>
-						<Link href='/'>Home</Link>
-					</li>
-					<li>
-						<Link href='/about'>About</Link>
-					</li>
-					<li>
-						<Link href='/docs'>Docs</Link>
-					</li>
-					<li>
-						<Link href='/components'>Components</Link>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		</header>
 	);
 };
 
