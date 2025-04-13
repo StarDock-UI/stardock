@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/page.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"ctas\": \"page-module__E0kJGG__ctas\",\n  \"footer\": \"page-module__E0kJGG__footer\",\n  \"logo\": \"page-module__E0kJGG__logo\",\n  \"main\": \"page-module__E0kJGG__main\",\n  \"page\": \"page-module__E0kJGG__page\",\n  \"primary\": \"page-module__E0kJGG__primary\",\n  \"secondary\": \"page-module__E0kJGG__secondary\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"}},
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file://D%3A/Dev/stardock/site/app/components/HeroSection.tsx"],"sourcesContent":["import React from 'react'\r\n\r\nconst HeroSection = () => {\r\n  return (\r\n    <div>\r\n      Hero Section\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default HeroSection\r\n"],"names":[],"mappings":";;;;;AAEA,MAAM,cAAc;IAClB,qBACE,6WAAC;kBAAI;;;;;;AAIT;uCAEe","debugId":null}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":["file://D%3A/Dev/stardock/site/app/page.tsx"],"sourcesContent":["import Image from 'next/image';\r\nimport styles from './page.module.css';\r\nimport HeroSection from './components/HeroSection';\r\n\r\nexport default function Home() {\r\n\treturn (\r\n\t\t<div className={styles.page}>\r\n\t\t\t<HeroSection/>\r\n\t\t</div>\r\n\t);\r\n}\r\n"],"names":[],"mappings":";;;;AACA;AACA;;;;AAEe,SAAS;IACvB,qBACC,6WAAC;QAAI,WAAW,uHAAA,CAAA,UAAM,CAAC,IAAI;kBAC1B,cAAA,6WAAC,iIAAA,CAAA,UAAW;;;;;;;;;;AAGf","debugId":null}}]
+}
