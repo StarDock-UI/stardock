@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div>
       <button onClick={toggleTheme}>Dark Mode</button>
+      <h2>Changes By rohan</h2>
     </div>
   )
 }
