@@ -1,9 +1,8 @@
 'use client';
-
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import styles from '@/app/styles/Header.module.css';
 import { Search, Sun, Moon } from 'lucide-react';
+import styles from '../styles/Header.module.css'
 
 const Header = () => {
 	const [darkMode, setDarkMode] = useState(false);
