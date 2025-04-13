@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div>
       <button onClick={toggleTheme}>Dark Mode</button>
+      <h1>changes by diya</h1>
     </div>
   )
 }
