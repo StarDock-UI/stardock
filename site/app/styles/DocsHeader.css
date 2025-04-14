@@ -16,7 +16,7 @@ input{
 	border-radius: 8px;
 	outline: none;            
 	box-shadow: none; 
-	padding-left: 300px;
+	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 
@@ -57,7 +57,7 @@ button{
 }
 
 .iconToggle:hover .toggleIcon {
-	transform: rotate(25deg);
+	transform: rotate(12deg);
 }
 
 .iconToggle:hover {

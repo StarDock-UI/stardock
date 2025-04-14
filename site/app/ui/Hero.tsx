@@ -24,11 +24,15 @@ const Hero = () => {
 				<button className='btn primary'>Get Started</button>
 				<button className='btn secondary'>Documentation</button>
 			</div>
-			<code className='code-block' id='code-block'>
-				npm i stardock@latest
-			</code>
-			<Copy />
+			<div className='install-wrapper'>
+				<code className='code-block' id='code-block'>
+					npm i stardock@latest
+				</code>
+				<Copy />
+			</div>
 		</section>
+
+
 	);
 };
 
