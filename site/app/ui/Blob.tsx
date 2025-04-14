@@ -24,7 +24,7 @@ const Blob: React.FC<BlobProps> = ({
     backgroundColor: color,
     position: 'absolute',
     top,
-    zIndex: 10,
+    zIndex: -1,
     opacity,
     filter: 'blur(80px)',
     ...(left !== undefined ? { left } : {}),
