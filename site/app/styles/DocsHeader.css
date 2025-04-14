@@ -1,0 +1,11 @@
+.docsHeader {
+	position: fixed;
+	top: 0;
+	left: 250px;
+	right: 0;
+	display: flex;
+	width: 100%;
+	background: #00000099;
+	backdrop-filter: blur(12px);
+    padding: 20px;
+}

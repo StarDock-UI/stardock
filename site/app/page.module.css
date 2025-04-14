@@ -8,6 +8,11 @@
   src: url('/fonts/CabinetGrotesk-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Pencerio-Hairline';
+  src: url('/fonts/Pencerio-Hairline.woff2') format('woff2');
+}
+
 .page {
 	position: relative;
     font-family: 'CabinetGrotesk', sans-serif;

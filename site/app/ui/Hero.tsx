@@ -1,16 +1,16 @@
 'use client';
 import React from 'react';
-import '../styles/HeroSection.css';
+import '../styles/Hero.css';
 
-const HeroSection = () => {
+const Hero = () => {
 	return (
 		<section className='hero-section'>
-			<div className='badge'>20 Pre-Built Components</div>
+			{/* <div className='badge'>Hackathon Project</div> */}
 
 			<h1 className='hero-title'>
-				<span className='highlight'>Minimal </span>
-				Style for Modern
-				<span className='highlight'> Interfaces.</span>
+				Everything You Need.
+				<br />
+				<span className='highlight'>Nothing You Don't.</span>
 			</h1>
 
 			<p className='hero-subtitle'>
@@ -21,7 +21,7 @@ const HeroSection = () => {
 
 			<div className='hero-buttons'>
 				<button className='btn primary'>Get Started</button>
-				<button className='btn secondary'>View Documentation</button>
+				<button className='btn secondary'>Documentation</button>
 			</div>
 			<code className='code-block' id='code-block'>
 				npm i stardock@latest
@@ -30,4 +30,4 @@ const HeroSection = () => {
 	);
 };
 
-export default HeroSection;
+export default Hero;

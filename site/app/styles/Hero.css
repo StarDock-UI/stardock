@@ -1,6 +1,4 @@
 .hero-section {
-	color: #fff;
-	padding: 30px 30;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -8,36 +6,31 @@
 	justify-content: center;
 	z-index: 100;
 	text-align: center;
-	font-weight: bold;
 }
 
 .badge {
-	background-color: #7f52c7;
+	border: 2px solid #7f52c7;
 	color: #fff;
-	display: inline-block;
+    font-weight: 600;
 	padding: 10px 10px;
 	font-size: 0.8rem;
 	border-radius: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .code-block {
 	background-color: #2d2d2d;
-	color: white;
 	padding: 10px 15px;
 	width: fit-content;
 	border-radius: 5px;
 	font-size: 0.9rem;
-	display: flex;
-    margin-top: 50px;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    bottom: 100px;
 }
 
 .hero-title {
-	font-size: 3.5rem;
-	margin-bottom: 20px;
-	font-weight: bold;
+	font-size: 3rem;
+	margin-bottom: 10px;
 	font-family: 'CabinetGrotesk-Bold', sans-serif;
 }
 
@@ -46,9 +39,8 @@
 }
 
 .hero-subtitle {
-	font-size: 1.4rem;
-	margin-bottom: 30px;
-	font-weight: 300;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
 }
 
 .hero-buttons {
@@ -72,7 +64,7 @@
 }
 
 .primary:hover {
-	background-color: #ff4757;
+	background-color: #2d1554;
 }
 
 .secondary {
@@ -80,7 +72,8 @@
 }
 
 .secondary:hover {
-	background-color: #1e8547;
+	background-color: transparent;
+	border: 2px solid #7f52c7;
 }
 
 @media (max-width: 768px) {

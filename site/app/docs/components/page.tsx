@@ -1,10 +1,11 @@
 import React from 'react'
+import '@/app/styles/Docs.css';
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <div className='content-section'>
+
+      </div>
   )
 }
 
