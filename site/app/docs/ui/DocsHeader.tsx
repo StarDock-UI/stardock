@@ -1,5 +1,5 @@
 'use client';
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Search, Sun } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import '@/app/styles/DocsHeader.css';
 
@@ -12,16 +12,18 @@ const DocsHeader = () => {
 
 	return (
 		<div className='docsHeader'>
+			<Search className='searchIcon' />
 			<input
 				type='text'
-				placeholder='CTRL + K to search'
+
+				placeholder='CTRL + K'
 				aria-label='Search'
 				className='searchInput'
 			/>
 
 			<button
 				onClick={() => setDarkMode(!darkMode)}
-				className='modeToggle'
+				className='iconToggle'
 				aria-label='Toggle Theme'
 			>
 				{darkMode ? (

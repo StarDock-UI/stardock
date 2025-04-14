@@ -12,7 +12,7 @@ const Sidebar = () => {
 					<Logo />
 					<h1>StarDock</h1>
 				</Link>
-				<p className='docs'>Docs</p>
+				
 			</div>
 
 			<div className='sidebar-nav'>
