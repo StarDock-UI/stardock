@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import '../styles/Hero.css';
+import Copy from './Copy';
 
 const Hero = () => {
 	return (
@@ -26,6 +27,7 @@ const Hero = () => {
 			<code className='code-block' id='code-block'>
 				npm i stardock@latest
 			</code>
+			<Copy />
 		</section>
 	);
 };
