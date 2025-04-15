@@ -1,65 +1,62 @@
+'use client'
 import React from 'react';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
+import '@/app/docs/css/home.css'; // Reuse your styling
 
-import { ChevronRight } from 'lucide-react';
-
-const GettingStartedPage = () => {
+const GettingStarted = () => {
   return (
     <div className="docs-container">
+      {/* Sidebar */}
       <Sidebar />
+
       <div className="main-content">
+        {/* Top header */}
         <DocsHeader />
+
+        {/* Blob background */}
         <Blob size="500px" top="20px" opacity={0.1} />
+
+        {/* Page content */}
         <div className="content-section">
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Getting Started</span>
-          </div>
-
-          <h1>Getting Started with StarDock</h1>
+          <h2>🚀 Getting Started with StarDock</h2>
           <p>
-            StarDock is a sleek and customizable UI library built to help you
-            build beautiful interfaces faster. This guide will walk you through
-            how to get everything running smoothly.
+            Let's get your UI components up and running in just a few steps. StarDock is built for speed, customization, and developer happiness.
           </p>
 
-          <h2>Step 1: Installation</h2>
-          <p>Use your terminal to set up the project locally:</p>
-          <ol>
-            <li>
-              Clone:{" "}
-              <code>git clone https://github.com/your-repo/stardock.git</code>
-            </li>
-            <li>
-              Move into the directory: <code>cd stardock</code>
-            </li>
-            <li>
-              Install dependencies: <code>npm install</code> or{" "}
-              <code>yarn</code>
-            </li>
-            <li>
-              Start development server: <code>npm run dev</code>
-            </li>
-          </ol>
+          <h2>📦 Installation</h2>
+          <p>To start using StarDock, install the package via npm or yarn:</p>
+          <code>npm install stylocss</code>
+          <p>or</p>
+          <code>yarn add stylocss</code>
 
-          <h2>Step 2: Explore Components</h2>
-          <p>
-            After setup, dive into the <code>/components</code> folder to see
-            reusable UI elements. Customize and use them across your app.
-          </p>
+          <h2>🧬 Importing Styles</h2>
+          <p>Include the base styles in your main app entry file (e.g. <code>layout.tsx</code> or <code>_app.tsx</code>):</p>
+          <code>{`import 'stylocss/styles.css';`}</code>
 
-          <h2>StarDock Philosophy</h2>
-          <p>
-            Our goal is to simplify UI development without compromising
-            flexibility. All components are accessible, fast, and designed with
-            modern UX principles.
-          </p>
+          <h2>🔨 Usage Example</h2>
+          <p>Now start building! Here's an example using the Button component:</p>
+          <code>{`<Button variant="primary">Click Me</Button>`}</code>
 
-        
+          <h2>🛠 File Structure</h2>
+          <p>When using StarDock with a framework like Next.js or React:</p>
+          <ul>
+            <li><code>components/</code> – Your reusable components</li>
+            <li><code>styles/</code> – Custom themes and overrides</li>
+            <li><code>pages/</code> or <code>app/</code> – Your routes</li>
+          </ul>
+
+          <h2>📘 Next Steps</h2>
+          <p>Ready to dive deeper?</p>
+          <ul>
+            <li><Link href="/docs/components/buttons">Explore Button Variants</Link></li>
+            <li><Link href="/docs/components/forms">Build Form UI</Link></li>
+            <li><Link href="/docs/components/layouts">Create Responsive Layouts</Link></li>
+          </ul>
+
           <div className="navigation-buttons">
             <Link href="/docs">
               <span className="Doc-button left-button">← Home</span>
@@ -75,4 +72,4 @@ const GettingStartedPage = () => {
   );
 };
 
-export default GettingStartedPage
+export default GettingStarted;
