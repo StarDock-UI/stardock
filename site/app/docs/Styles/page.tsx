@@ -1,14 +1,30 @@
-import React from 'react';
-// import Sidebar from '../../ui/Sidebar';
-// import DocsHeader from '../../ui/DocsHeader';
-import Sidebar from '../ui/Sidebar';
-import DocsHeader from '../ui/DocsHeader';
+'use client';
+import React, { useEffect, useRef } from 'react';
+import Sidebar from '.././ui/Sidebar';
+import DocsHeader from '.././ui/DocsHeader';
 import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
+
 import { ChevronRight } from 'lucide-react';
 
 const StylesPage = () => {
+  const leftLinkRef = useRef<HTMLAnchorElement>(null);
+  const rightLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        leftLinkRef.current?.click();
+      } else if (e.key === 'ArrowRight') {
+        rightLinkRef.current?.click();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="docs-container">
       <Sidebar />
@@ -21,40 +37,28 @@ const StylesPage = () => {
             <span>Styles</span>
           </div>
 
-          <h1>Styling Your Components</h1>
-          <p>This guide will walk you through customizing Clerk's prebuilt UI to match your application’s branding.</p>
+          <h1>Styling Guidelines</h1>
+          <p>
+            In this section, we’ll cover the general styling principles and best practices for the project.
+          </p>
 
-          <h2>CSS Customization</h2>
-          <ul>
-            <li>Use utility classes like Tailwind or your preferred CSS framework.</li>
-            <li>Apply custom themes to Clerk’s hosted components using Clerk's <code>appearance</code> prop.</li>
-            <li>Use scoped styles or global styles to override specific visual elements.</li>
-          </ul>
+          <h2>Global Styles</h2>
+          <p>
+            Learn how global styles are applied throughout the application. This includes typography, colors, and layout.
+          </p>
 
-          <h2>Using the Appearance Prop</h2>
-          <p>Most Clerk components accept an <code>appearance</code> prop where you can pass class overrides:</p>
-
-          <pre>
-            <code>
-{`<SignIn
-  appearance={{
-    elements: {
-      formButtonPrimary: 'bg-purple-600 hover:bg-purple-700 text-white',
-    }
-  }}
-/>`}
-            </code>
-          </pre>
-
-          <h2>Global Styling</h2>
-          <p>To override Clerk styles globally, define custom CSS inside your <code>styles</code> folder and import it in your app entry point.</p>
+          <h2>Component Styles</h2>
+          <p>
+            Each UI component has its own set of styles for consistency. These are defined within their respective folders.
+          </p>
 
           <div className="navigation-buttons">
-            <Link href="/docs/components">
+            <Link href="/docs/components" ref={leftLinkRef}>
               <span className="Doc-button left-button">← Components</span>
             </Link>
-            <Link href="/docs/api-references">
-              <span className="Doc-button right-button">API References →</span>
+
+            <Link href="/docs/api-references" ref={rightLinkRef}>
+              <span className="Doc-button right-button">Api References →</span>
             </Link>
           </div>
         </div>

@@ -1,13 +1,29 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useRef } from 'react';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
-
 import { ChevronRight } from 'lucide-react';
 
 const GettingStartedPage = () => {
+  const leftLinkRef = useRef<HTMLAnchorElement>(null);
+  const rightLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        leftLinkRef.current?.click();
+      } else if (e.key === 'ArrowRight') {
+        rightLinkRef.current?.click();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="docs-container">
       <Sidebar />
@@ -20,53 +36,28 @@ const GettingStartedPage = () => {
             <span>Getting Started</span>
           </div>
 
-          <h1>Getting Started with StarDock</h1>
+          <h1>Getting Started</h1>
           <p>
-            StarDock is a sleek and customizable UI library built to help you
-            build beautiful interfaces faster. This guide will walk you through
-            how to get everything running smoothly.
+            Welcome! This guide will help you get started with integrating and using the system effectively.
           </p>
 
-          <h2>Step 1: Installation</h2>
-          <p>Use your terminal to set up the project locally:</p>
-          <ol>
-            <li>
-              Clone:{" "}
-              <code>git clone https://github.com/your-repo/stardock.git</code>
-            </li>
-            <li>
-              Move into the directory: <code>cd stardock</code>
-            </li>
-            <li>
-              Install dependencies: <code>npm install</code> or{" "}
-              <code>yarn</code>
-            </li>
-            <li>
-              Start development server: <code>npm run dev</code>
-            </li>
-          </ol>
-
-          <h2>Step 2: Explore Components</h2>
+          <h2>Installation</h2>
           <p>
-            After setup, dive into the <code>/components</code> folder to see
-            reusable UI elements. Customize and use them across your app.
+            Follow the steps below to install the library and begin using it in your project.
           </p>
 
-          <h2>StarDock Philosophy</h2>
+          <h2>First Steps</h2>
           <p>
-            Our goal is to simplify UI development without compromising
-            flexibility. All components are accessible, fast, and designed with
-            modern UX principles.
+            After installation, you can start by exploring our core components and authentication flow.
           </p>
 
-        
           <div className="navigation-buttons">
-            <Link href="/docs">
+            <Link href="/docs" ref={leftLinkRef}>
               <span className="Doc-button left-button">← Home</span>
             </Link>
 
-            <Link href="/docs/guides">
-              <span className="Doc-button right-button">Guides →</span>
+            <Link href="/docs/components" ref={rightLinkRef}>
+              <span className="Doc-button right-button">Components →</span>
             </Link>
           </div>
         </div>
@@ -75,4 +66,4 @@ const GettingStartedPage = () => {
   );
 };
 
-export default GettingStartedPage
+export default GettingStartedPage;

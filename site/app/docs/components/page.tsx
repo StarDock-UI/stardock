@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useRef } from 'react';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -8,6 +9,22 @@ import '@/app/styles/Docs.css';
 import { ChevronRight } from 'lucide-react';
 
 const ComponentsPage = () => {
+  const leftLinkRef = useRef<HTMLAnchorElement>(null);
+  const rightLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        leftLinkRef.current?.click();
+      } else if (e.key === 'ArrowRight') {
+        rightLinkRef.current?.click();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="docs-container">
       <Sidebar />
@@ -36,11 +53,11 @@ const ComponentsPage = () => {
           </p>
 
           <div className="navigation-buttons">
-            <Link href="/docs/guides">
+            <Link href="/docs/guides" ref={leftLinkRef}>
               <span className="Doc-button left-button">← Guides</span>
             </Link>
 
-            <Link href="/docs/api-references">
+            <Link href="/docs/Styles" ref={rightLinkRef}>
               <span className="Doc-button right-button">Styles →</span>
             </Link>
           </div>

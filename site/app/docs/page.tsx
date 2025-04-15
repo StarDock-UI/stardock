@@ -1,14 +1,27 @@
-import React from 'react';
-import Sidebar from './ui/Sidebar'; // Assuming Sidebar component is already styled
-import DocsHeader from './ui/DocsHeader'; // Assuming DocsHeader component is already styled
-import Blob from '../ui/Blob'; // Assuming Blob component is used for design aesthetics
-import Link from 'next/link'; // Import Link for redirection
+'use client';
+import React, { useEffect, useRef } from 'react';
+import Sidebar from './ui/Sidebar';
+import DocsHeader from './ui/DocsHeader';
+import Blob from '../ui/Blob';
+import Link from 'next/link';
 import '@/app/styles/Docs.css';
-// import "../docs/Dstyles/NavLinks.css"; // Import your NavLinks.css
 
 import { ChevronRight } from 'lucide-react';
 
 const Docs = () => {
+  const rightLinkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') {
+        rightLinkRef.current?.click();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="docs-container">
       <Sidebar />
@@ -20,6 +33,7 @@ const Docs = () => {
             <ChevronRight />
             <span>Documentation</span>
           </div>
+
           <h1>Getting Started</h1>
           <p>Welcome to the documentation! This guide will help you set up and get started with our application.</p>
 
@@ -43,7 +57,7 @@ const Docs = () => {
           <p>If you run into issues or have questions, feel free to check out our <a href="/support">Support Page</a> or reach out to the community.</p>
 
           {/* "Getting Started" Button */}
-          <Link href="/docs/getting-started">
+          <Link href="/docs/getting-started" ref={rightLinkRef}>
             <span className="Doc-button right-button">Get Started →</span>
           </Link>
         </div>
@@ -52,4 +66,6 @@ const Docs = () => {
   );
 };
 
-export default Docs
+export default Docs;
+
+
