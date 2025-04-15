@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-import Sidebar from '.././ui/Sidebar';
-import DocsHeader from '.././ui/DocsHeader';
+import Sidebar from '../ui/Sidebar';
+import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';

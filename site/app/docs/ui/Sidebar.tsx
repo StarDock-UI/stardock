@@ -15,7 +15,7 @@ const Sidebar = () => {
 		{ href: '/docs/getting-started', label: 'Getting Started', icon: <CheckCircle2 /> },
 		{ href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
 		{ href: '/docs/components', label: 'Components', icon: <Box /> },
-		{ href: '/docs/Styles', label: 'Styles', icon: <Palette/> },
+		{ href: '/docs/styles', label: 'Styles', icon: <Palette/> },
 		{ href: '/docs/api-references', label: 'API References', icon: <Code /> }
 	]
 
