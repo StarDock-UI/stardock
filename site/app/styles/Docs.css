@@ -1,0 +1,89 @@
+.content-section {
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 250px;
+}
+/* NavButtons.css */
+
+/* .navigation-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding: 0 1rem;
+  }
+  
+  .Doc-button {
+	padding: 10px 20px;
+	background-color: #7f52c7;
+	color: white;
+	border-radius: 6px;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	display: inline-block;
+  }
+  
+  .Doc-button:hover {
+	background-color: #6335ae;
+  }
+  
+  .left-button {
+	margin-right: auto;
+
+	float: left;
+  }
+  
+  .right-button {
+	margin-left: auto;
+	float: right;
+  }
+   */
+
+   .navigation-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding: 0 1rem;
+}
+
+/* Base link style */
+.Doc-button {
+	color: #a678e2;
+	font-weight: 600;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.3s ease;
+	font-size: 1rem;
+	padding: 6px 0;
+}
+
+/* Underline on hover */
+.Doc-button::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #a678e2;
+	transition: width 0.3s ease;
+}
+
+.Doc-button:hover::after {
+	width: 100%;
+}
+
+/* Optional: Arrow-style hover shift */
+.Doc-button:hover {
+	transform: translateX(2px);
+}
+
+/* Alignment remains */
+.left-button {
+	margin-right: auto;
+}
+
+.right-button {
+	margin-left: auto;
+}
