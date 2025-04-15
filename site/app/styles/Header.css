@@ -1,39 +1,35 @@
-/* Entire header bar */
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding: 1rem 2rem;
-	background-color: #000000cc;
+	background-color: #00000098;
 	backdrop-filter: blur(10px);
 	z-index: 1000;
-  }
-  
-  /* Inner container layout */
-  .container {
+}
+
+.container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 1440px;
+	max-width: 80%;
 	margin: 0 auto;
 	width: 100%;
 	overflow: hidden;
 	flex-wrap: nowrap;
 	gap: 1.5rem;
-  }
-  
-  
-  .left {
+}
+
+.left {
 	list-style: none;
-	display: flex; 
+	display: flex;
 	margin: 0;
 	padding: 0;
-	
-  }
-  
-  /* Logo with text */
-  .logo {
+}
+
+/* Logo with text */
+.logo {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -41,78 +37,77 @@
 	color: #9f7aea;
 	white-space: nowrap;
 	font-weight: bold;
-  }
-  
-  .logo h1 {
+}
+
+.logo h1 {
 	margin: 0;
 	font-size: 1.5rem;
-  }
-  
-  /* Nav section */
-  .nav {
+}
+
+/* Nav section */
+.nav {
 	display: flex;
 	gap: 1rem;
 	flex-wrap: nowrap;
-	margin-right:500px;
-  }
-  
-  .navLink {
+	margin-right: 500px;
+}
+
+.navLink {
 	text-decoration: none;
 	color: white;
 	font-weight: 500;
 	white-space: nowrap;
 	transition: color 0.3s ease;
-  }
-  
-  .navLink:hover {
+}
+
+.navLink:hover {
 	color: #9f7aea;
-  }
-  
-  /* Right side: search + toggle */
-  .right {
+}
+
+/* Right side: search + toggle */
+.right {
 	display: flex;
 	align-items: center;
 	flex-shrink: 0;
 	gap: 1rem;
-  }
-  
-  /* Search input box */
-  .searchBox {
+}
+
+/* Search input box */
+.searchBox {
 	position: relative;
 	width: 240px;
 	min-width: 180px;
 	flex-shrink: 1;
-  }
-  
-  .searchInput {
+}
+
+.searchInput {
 	width: 100%;
 	padding: 0.5rem 2.2rem 0.5rem 0.8rem;
 	border-radius: 8px;
 	border: none;
 	background: #181818;
 	color: white;
-  }
-  
-  .searchIcon {
+}
+
+.searchIcon {
 	position: absolute;
 	right: 10px;
 	top: 50%;
 	transform: translateY(-50%);
 	color: #aaa;
-  }
-  
-  /* Theme toggle button */
-  .iconToggle {
+}
+
+/* Theme toggle button */
+.iconToggle {
 	background: transparent;
 	border: none;
 	cursor: pointer;
 	padding: 0.5rem;
 	border-radius: 50%;
-  }
-  
-  .toggleIcon {
+}
+
+.toggleIcon {
 	color: #9f7aea;
 	width: 20px;
 	height: 20px;
-  }
-  
+}
