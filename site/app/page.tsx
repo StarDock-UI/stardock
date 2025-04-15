@@ -9,7 +9,6 @@ export default function Home() {
 		<>
 			<Header />
 			<HeroSection />
-			<Footer />
 			<Blob top='100px' left='10px' opacity={0.3} />
 			<Blob top='300px' right='10px' opacity={0.2} size='500px' />
 		</>
