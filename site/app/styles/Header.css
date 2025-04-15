@@ -23,14 +23,13 @@
 	gap: 1.5rem;
   }
   
-  /* Left side: logo + nav */
+  
   .left {
-	display: flex;
-	align-items: center;
-	flex-wrap: nowrap;
-	gap: 2rem;
-	min-width: 0;
-	flex: 1 1 auto;
+	list-style: none;
+	display: flex; 
+	margin: 0;
+	padding: 0;
+	
   }
   
   /* Logo with text */
@@ -54,6 +53,7 @@
 	display: flex;
 	gap: 1rem;
 	flex-wrap: nowrap;
+	margin-right:500px;
   }
   
   .navLink {
