@@ -7,7 +7,15 @@ import Link from 'next/link';
 import '@/app/styles/Docs.css';
 import '@/app/docs/css/home.css';
 
-import { ChevronRight } from 'lucide-react';
+import {
+  BookOpen,
+  ShieldCheck,
+  Globe,
+  FolderSearch,
+  AlertCircle,
+  ArrowLeftCircle,
+  ArrowRightCircle,
+} from 'lucide-react';
 
 const ApiPage = () => {
   return (
@@ -19,26 +27,32 @@ const ApiPage = () => {
         <Blob size="500px" top="20px" opacity={0.1} />
 
         <div className="content-section">
-         
-
-          <h2>📚 API Reference</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <BookOpen size={20} /> API Reference
+          </h2>
           <p>
             StarDock exposes a flexible API to allow you to interact with themes, components,
             and design tokens programmatically. This section covers endpoints, authentication,
             and usage examples.
           </p>
 
-          <h2>🔐 Authentication</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <ShieldCheck size={20} /> Authentication
+          </h2>
           <p>
             All API requests must be authenticated using a bearer token. You can generate your
             API key in the dashboard under <strong>Settings → API</strong>.
           </p>
           <code>Authorization: Bearer YOUR_API_KEY</code>
 
-          <h2>🌐 Base URL</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Globe size={20} /> Base URL
+          </h2>
           <code>https://api.stylocss.dev/v1</code>
 
-          <h2>📂 Endpoints</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <FolderSearch size={20} /> Endpoints
+          </h2>
 
           <h3>GET /themes</h3>
           <p>Retrieve a list of available themes.</p>
@@ -90,7 +104,9 @@ const ApiPage = () => {
 }`}</code>
           </pre>
 
-          <h2>📌 Error Handling</h2>
+          <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <AlertCircle size={20} /> Error Handling
+          </h2>
           <p>API errors return standardized messages with status codes.</p>
           <pre>
             <code>{`{
