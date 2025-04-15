@@ -3,7 +3,7 @@
 	top: 0;
 	left: 250px;
 	width: 80%;
-	height: 60px; /* or whatever height you want */
+	height: 80px; /* or whatever height you want */
 	background-color: #000000cc; /* solid background color */
 	color: white;
 	z-index: 1000; /* ensure it's above other elements */
@@ -11,7 +11,7 @@
 }
 
 input {
-	margin-top: 10px;
+	margin-top: 30px;
 	width: 400px;
 	border-radius: 8px;
 	outline: none;
@@ -37,7 +37,7 @@ input {
 .searchIcon {
 	position: absolute;
 	left: 30px;
-	top: 50%;
+	top: 62%;
 	transform: translateY(-50%);
 }
 
