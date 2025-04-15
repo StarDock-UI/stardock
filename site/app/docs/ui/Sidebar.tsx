@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, Box, CheckCircle2, Code, Home } from 'lucide-react'
+import { BookOpen, Box, CheckCircle2, Code, Home, Palette } from 'lucide-react'
 import '@/app/styles/Sidebar.css'
 import Logo from '@/app/ui/Logo'
 
@@ -15,6 +15,7 @@ const Sidebar = () => {
 		{ href: '/docs/getting-started', label: 'Getting Started', icon: <CheckCircle2 /> },
 		{ href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
 		{ href: '/docs/components', label: 'Components', icon: <Box /> },
+		{ href: '/docs/Styles', label: 'Styles', icon: <Palette/> },
 		{ href: '/docs/api-references', label: 'API References', icon: <Code /> }
 	]
 
