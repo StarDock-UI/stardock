@@ -25,11 +25,6 @@ const StylesPage = () => {
         <Blob size="500px" top="20px" opacity={0.1} />
 
         <div className="content-section">
-          {/* Breadcrumb */}
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Styles</span>
-          </div>
 
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Palette size={20} /> Styling Your Components
