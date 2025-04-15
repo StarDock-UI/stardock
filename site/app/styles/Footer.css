@@ -2,13 +2,17 @@
 	background-color: #00000099;
 	padding: 3rem 0;
 	z-index: 1000;
+	position: relative;
 	border-top: 1px solid #333;
+	margin-left: 250px;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 800px;
+	height: 40vh;
 	margin: 0 auto;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 2rem;

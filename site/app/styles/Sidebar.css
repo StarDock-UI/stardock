@@ -1,7 +1,7 @@
 .sidebar {
 	background-color: #00000099;
 	backdrop-filter: blur(12px);
-	width: 300px;
+	width: 250px;
     padding-top: 20px;
 	height: 100vh;
 	position: fixed;

@@ -36,9 +36,15 @@ const Header = () => {
 					</Link>
 				</div>
 				<nav className='nav'>
-					<Link href='/docs' className='navLink'>Docs</Link>
-					<Link href='/components' className='navLink'>Components</Link>
-					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>Github</Link>
+					<Link href='/docs' className='navLink'>
+						Docs
+					</Link>
+					<Link href='/docs/components' className='navLink'>
+						Components
+					</Link>
+					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
+						Github
+					</Link>
 				</nav>
 
 				{/* RIGHT: Search + Toggle */}
