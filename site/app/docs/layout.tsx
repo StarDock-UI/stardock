@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import './globals.css';
-import Footer from './ui/Footer';
+import DocsHeader from './ui/DocsHeader';
+import Sidebar from './ui/Sidebar';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -15,10 +15,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body>
-				<>
+				<div>
+					<Sidebar />
+					<DocsHeader />
 					{children}
-					<Footer />
-				</>
+				</div>
 			</body>
 		</html>
 	);
