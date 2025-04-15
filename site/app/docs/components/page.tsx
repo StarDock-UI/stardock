@@ -19,13 +19,9 @@ const ComponentsPage = () => {
         <Blob size="500px" top="20px" opacity={0.1} />
 
         <div className="content-section">
-          {/* Breadcrumb */}
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Components</span>
-          </div>
+        
 
-          <h1>🧩 Components Overview</h1>
+          <h2>🧩 Components Overview</h2>
           <p>
             StarDock provides a set of pre-built, themeable, and flexible UI components to help you build
             interfaces faster and better. Below is an overview of available components and how to start using them.

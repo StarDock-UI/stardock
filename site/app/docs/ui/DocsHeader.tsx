@@ -31,12 +31,12 @@ const DocsHeader = () => {
 			<input
 				ref={searchRef}
 				type='text'
-				placeholder='CTRL + K to Search'
+				placeholder='CTRL + K'
 				aria-label='Search'
 				className='searchInput'
 			/>
 
-			<button
+			{/* <button
 				onClick={() => setDarkMode(!darkMode)}
 				className='iconToggle'
 				aria-label='Toggle Theme'
@@ -46,7 +46,7 @@ const DocsHeader = () => {
 				) : (
 					<Moon className='toggleIcon' />
 				)}
-			</button>
+			</button> */}
 		</div>
 	);
 };
