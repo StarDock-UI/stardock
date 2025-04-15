@@ -34,19 +34,19 @@ const Header = () => {
 						<h1>StarDock</h1>
 					</Link>
 
-					<nav className='nav'>
-						<Link href='/docs' className='navLink'>
-							Docs
-						</Link>
-						<Link href='/components' className='navLink'>
-							Components
-						</Link>
-						<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
-							Github
-						</Link>
-					</nav>
-				</div>
 
+				</div>
+				<nav className='nav'>
+					<Link href='/docs' className='navLink'>
+						Docs
+					</Link>
+					<Link href='/components' className='navLink'>
+						Components
+					</Link>
+					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
+						Github
+					</Link>
+				</nav>
 				<div className='right'>
 					<div className='searchBox'>
 						<input
