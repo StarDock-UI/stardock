@@ -1,0 +1,5 @@
+.tran        { transition: all 150ms ease-in-out; }
+.tran-fast   { transition-duration: 150ms; }
+.tran-mid    { transition-duration: 300ms; }
+.ease-i      { transition-timing-function: ease-in; }
+.ease-o      { transition-timing-function: ease-out; }
