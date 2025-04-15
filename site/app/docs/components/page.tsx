@@ -41,7 +41,7 @@ const ComponentsPage = () => {
             </Link>
 
             <Link href="/docs/api-references">
-              <span className="Doc-button right-button">API →</span>
+              <span className="Doc-button right-button">API REFRENCES →</span>
             </Link>
           </div>
         </div>

@@ -3,42 +3,6 @@
 	margin-top: 20px;
 	margin-left: 250px;
 }
-/* NavButtons.css */
-
-/* .navigation-buttons {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
-	padding: 0 1rem;
-  }
-  
-  .Doc-button {
-	padding: 10px 20px;
-	background-color: #7f52c7;
-	color: white;
-	border-radius: 6px;
-	font-weight: 600;
-	cursor: pointer;
-	text-decoration: none;
-	transition: background-color 0.3s ease;
-	display: inline-block;
-  }
-  
-  .Doc-button:hover {
-	background-color: #6335ae;
-  }
-  
-  .left-button {
-	margin-right: auto;
-
-	float: left;
-  }
-  
-  .right-button {
-	margin-left: auto;
-	float: right;
-  }
-   */
 
    .navigation-buttons {
 	display: flex;
@@ -81,9 +45,12 @@
 
 /* Alignment remains */
 .left-button {
+	float: left;
 	margin-right: auto;
 }
 
 .right-button {
+	float: right;
 	margin-left: auto;
 }
+

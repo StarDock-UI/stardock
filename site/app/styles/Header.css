@@ -102,6 +102,10 @@
 	color: var(--accent);
 	cursor: pointer;
 	transition: color 0.3s ease;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+	
 }
 
 .iconToggle {

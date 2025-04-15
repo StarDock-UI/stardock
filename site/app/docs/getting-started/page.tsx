@@ -75,4 +75,4 @@ const GettingStartedPage = () => {
   );
 };
 
-export default GettingStartedPage;
+export default GettingStartedPage

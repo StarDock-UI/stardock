@@ -35,13 +35,13 @@ const ApiPage = () => {
             Our API provides endpoints to interact with different parts of the system. For example, the `/users` endpoint allows you to manage users.
           </p>
 
-          <div className="navigation-buttons">
-            <Link href="/docs/components">
-              <span className="Doc-button left-button">← Components</span>
-            </Link>
+   
+<div className="navigation-buttons">
+  <Link href="/docs/getting-started" className="Doc-button right-button">
+    Get Started →
+  </Link>
+</div>
 
-           
-          </div>
         </div>
       </div>
     </div>
@@ -49,3 +49,4 @@ const ApiPage = () => {
 };
 
 export default ApiPage;
+
