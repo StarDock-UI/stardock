@@ -1,13 +1,13 @@
 .header {
-	padding: 1.25rem 1.25rem;
+	padding: 1.25rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #00000099;
 	position: fixed;
+	top: 0;
 	left: 0;
 	right: 0;
-	top: 0;
 	z-index: 1000;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 	backdrop-filter: blur(12px);
@@ -22,31 +22,21 @@
 	align-items: center;
 }
 
-.left {
+.left, .logo {
 	display: flex;
 	align-items: center;
 	gap: 1.25rem;
 }
 
-.right {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	margin-left: auto;
-}
-
 .logo {
-	display: flex;
-	align-items: center;
 	gap: 0.5rem;
 }
 
 .logo h1 {
 	font-size: 1.5rem;
-	/* font-family: 'Pencerio-Hairline', sans-serif; */
 	color: #7f52c7;
+	/* font-family: 'Pencerio-Hairline', sans-serif; */
 }
-
 
 .nav {
 	display: flex;
@@ -60,10 +50,20 @@
 	font-size: 0.95rem;
 	font-weight: 500;
 	transition: color 0.3s ease;
+	padding: 0.3rem 0.5rem;
+	border-radius: 6px;
 }
 
 .navLink:hover {
 	color: var(--accent);
+	background-color: rgba(99, 102, 241, 0.1);
+}
+
+.right {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-left: auto;
 }
 
 .searchBox {
@@ -72,19 +72,17 @@
 }
 
 .searchInput {
-	padding: 0.4rem 2.2rem 0.4rem 0.9rem;
 	width: 100%;
-	border-radius: 8px;
+	padding: 0.4rem 2.2rem 0.4rem 0.9rem;
 	border: none;
-	font-size: 0.9rem;
-	color: inherit;
+	border-radius: 8px;
 	background-color: #181818;
-	transition: box-shadow 0.3s ease;
+	color: inherit;
+	font-size: 0.9rem;
 	box-sizing: border-box;
-}
-
-.searchInput:focus {
-	box-shadow: 0 0 5px var(--accent);
+	outline: none;
+	box-shadow: none;
+	transition: box-shadow 0.3s ease;
 }
 
 .searchInput::placeholder {
@@ -93,10 +91,12 @@
 }
 
 .searchIcon {
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 10px;
-	
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: #888;
 }
 
 .iconToggle {
@@ -126,8 +126,9 @@
 	background-color: rgba(99, 102, 241, 0.08);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-	.headerContainer {
+	.container {
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 0.8rem;
@@ -145,7 +146,6 @@
 	}
 
 	.searchInput {
-		width: 100%;
 		max-width: 320px;
 	}
 }
