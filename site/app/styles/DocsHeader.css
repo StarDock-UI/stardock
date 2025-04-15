@@ -7,39 +7,52 @@
 	width: 100%;
 	background: #00000099;
 	backdrop-filter: blur(12px);
-    padding: 20px;
+	padding: 20px;
 	display: flex;
 	justify-content: flex-start;
 }
-input{
-	width:400px;
-	border-radius: 8px;
-	outline: none;            
-	box-shadow: none; 
-	padding-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 
+input {
+	width: 400px;
+	border-radius: 8px;
+	outline: none;
+    font-size: 18px;
+    padding-left: 60px;
+	box-shadow: none;
+	border: none;
+	height: 40px;
 }
-button{
+
+.searchBar {
+	position: relative;
+	height: fit-content;
+}
+
+.keybind {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.searchIcon {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+button {
 	margin-left: 600px;
 	border-radius: 8px;
-	
 }
 .searchInput::placeholder {
-	color: #ffffffcc; 
+	color: #ffffffcc;
 	font-weight: 500;
 	font-size: 16px;
 	letter-spacing: 0.3px;
-	
 }
-.searchIcon {
-	position: absolute;
-	left: 35px; 
-	top: 50%;
-	transform: translateY(-50%);
-	color: #ffffffcc;
-}
+
 .iconToggle {
 	background: none;
 	border: none;
