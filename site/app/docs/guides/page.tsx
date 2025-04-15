@@ -24,12 +24,9 @@ const GuidesPage = () => {
 
         <div className="content-section">
           {/* Breadcrumb */}
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Guides</span>
-          </div>
+        
 
-          <h1>📖 StarDock Guides</h1>
+          <h2>📖 StarDock Guides</h2>
           <p>
             Learn how to unlock the full potential of StarDock with these step-by-step guides.
             Whether you're just getting started or looking to customize components for production,
