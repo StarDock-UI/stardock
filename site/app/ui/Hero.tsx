@@ -1,12 +1,11 @@
-'use client';
 import React from 'react';
 import Copy from './Copy';
-import '../styles/Hero.css';
+import '@/app/styles/Hero.css';
 
 const Hero = () => {
 	return (
 		<section className='hero-section'>
-			{/* <div className='badge'>Hackathon Project</div> */}
+			<div className='badge'>20+ Built-In Components</div>
 
 			<h1 className='hero-title'>
 				Everything You Need,  
@@ -20,8 +19,8 @@ const Hero = () => {
 			</p>
 
 			<div className='hero-buttons'>
-				<button className='btn primary'>Get Started</button>
-				<button className='btn secondary'>Documentation</button>
+				<button className='btn-primary btn'>Get Started</button>
+				<button className='btn-secondary btn'>Documentation</button>
 			</div>
 			<div className='copy-wrapper'>
 				<code className='copy-block' id='code-block'>
