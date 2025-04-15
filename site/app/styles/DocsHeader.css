@@ -2,22 +2,21 @@
 	position: fixed;
 	top: 0;
 	left: 250px;
-	right: 0;
-	display: flex;
-	width: 100%;
-	background: #00000099;
-	backdrop-filter: blur(12px);
-	padding: 20px;
-	display: flex;
-	justify-content: flex-start;
+	width: 80%;
+	height: 60px; /* or whatever height you want */
+	background-color: #000000cc; /* solid background color */
+	color: white;
+	z-index: 1000; /* ensure it's above other elements */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
 }
 
 input {
+	margin-top: 10px;
 	width: 400px;
 	border-radius: 8px;
 	outline: none;
     font-size: 18px;
-    padding-left: 60px;
+    padding-left: 300px;
 	box-shadow: none;
 	border: none;
 	height: 40px;
@@ -37,13 +36,14 @@ input {
 
 .searchIcon {
 	position: absolute;
-	left: 20px;
+	left: 30px;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
 button {
-	margin-left: 730px;
+	margin-top: 0px;
+	margin-left: 850px;
 	border-radius: 8px;
 }
 .searchInput::placeholder {
