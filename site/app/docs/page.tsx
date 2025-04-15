@@ -5,7 +5,6 @@ import DocsHeader from './ui/DocsHeader';
 import Blob from '../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
-import '@/app/docs/css/home.css'
 
 import { ChevronRight } from 'lucide-react';
 
@@ -28,55 +27,40 @@ const Docs = () => {
       <div className="main-content">
         <Blob size="500px" top="20px" opacity={0.1} />
         <div className="content-section">
-          <h2>Welcome to Star Dock</h2>
-          <p>
-            <strong>StarDock</strong> is a modern and lightweight UI component library that helps you build beautiful web interfaces faster.
-            Inspired by the best of Tailwind and Bootstrap, but built for developers who want flexibility without the bloat.
-          </p>
+          <div className="breadcrumb">
+            <ChevronRight />
+            <span>Documentation</span>
+          </div>
 
-          <h2>✨ Why StarDock?</h2>
-          <ul>
-            <li>🎨 Pre-styled, customizable components</li>
-            <li>⚡ Fast setup with zero config</li>
-            <li>📦 Modular and extensible architecture</li>
-            <li>🌐 Works with any modern JavaScript framework</li>
-          </ul>
+          <h1>Getting Started</h1>
+          <p>Welcome to the documentation! This guide will help you set up and get started with our application.</p>
 
-          <h2>🚀 Quick Start</h2>
-          <p>Get your UI up and running in minutes:</p>
+          <h2>Installation</h2>
+          <p>Follow these steps to install the project locally:</p>
           <ol>
-            <li>Install via npm: <code>npm install stylocss</code></li>
-            <li>Import core styles: <code>import 'stylocss/styles.css'</code></li>
-            <li>Start using components: <code>{`<Button variant="primary">Click Me</Button>`}</code></li>
+            <li>Clone the repository: <code>git clone https://github.com/your-repo/your-project.git</code></li>
+            <li>Navigate to the project directory: <code>cd your-project</code></li>
+            <li>Install dependencies: <code>npm install</code> or <code>yarn</code></li>
+            <li>Start the development server: <code>npm run dev</code></li>
           </ol>
 
-          <h2>📚 Explore Components</h2>
-          <p>Check out our library of reusable components to kickstart your next project:</p>
+          <h2>Project Structure</h2>
           <ul>
-            <li><a href="/docs/components/buttons">Buttons</a></li>
-            <li><a href="/docs/components/forms">Form Elements</a></li>
-            <li><a href="/docs/components/layouts">Grid & Layouts</a></li>
-            <li><a href="/docs/components/alerts">Alerts & Notifications</a></li>
+            <li><code>/ui</code> - Shared UI components like headers, buttons, etc.</li>
+            <li><code>/pages</code> - Main page components and routing structure.</li>
+            <li><code>/styles</code> - Global and component-specific CSS.</li>
           </ul>
 
-          <h2>🧩 Built With Flexibility</h2>
-          <p>
-            Whether you're building a simple landing page or a full-scale web app, StyloCSS adapts to your needs.
-            Use it with React, Vue, or just plain HTML/CSS.
-          </p>
+          <h2>Need Help?</h2>
+          <p>If you run into issues or have questions, feel free to check out our <a href="/support">Support Page</a> or reach out to the community.</p>
 
-          <h2>🔗 Join the Community</h2>
-          <p>
-            Questions? Feedback? Want to contribute? Join us on <a href="https://github.com/your-repo/your-project">GitHub</a> or
-            connect on <a href="/community">Community Chat</a>.
-          </p>
-
+          {/* "Getting Started" Button */}
           <Link href="/docs/getting-started" ref={rightLinkRef}>
-            <span className="Doc-button right-button">Getting-Started →</span>
+            <span className="Doc-button right-button">Get Started →</span>
           </Link>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
