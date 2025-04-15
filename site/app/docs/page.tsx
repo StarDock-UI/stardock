@@ -24,9 +24,7 @@ const Docs = () => {
 
   return (
     <div className="docs-container">
-      <Sidebar />
       <div className="main-content">
-        <DocsHeader />
         <Blob size="500px" top="20px" opacity={0.1} />
         <div className="content-section">
           <div className="breadcrumb">

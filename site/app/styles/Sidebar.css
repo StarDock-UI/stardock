@@ -1,19 +1,12 @@
 .sidebar {
 	background-color: #00000099;
 	backdrop-filter: blur(12px);
-	padding: 20px;
 	width: 250px;
+    padding-top: 20px;
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
-}
-
-.sidebar-item {
-	display: flex;
-	align-items: center;
-	scale: 0.8;
-	margin-bottom: 10px;
 }
 
 .sidebar-item h1 {
@@ -35,18 +28,15 @@
 	scale: 0.8;
 }
 
-/* Default sidebar item styling */
 .sidebar-item {
 	display: flex;
 	align-items: center;
 	scale: 0.8;
-	margin-bottom: 10px;
 	padding: 10px 15px;
 	transition: all 0.3s ease;
 	border-left: 4px solid transparent;
 }
 
-/* Active item with left border highlight */
 .sidebar-item.active {
 	border-left: 4px solid #a678e2;
 	background-color: transparent;
@@ -55,17 +45,16 @@
 	transform: translateX(5px);
 }
 
-/* Smooth color/icon transition */
 .sidebar-item svg,
 .sidebar-item h1 {
 	transition: color 0.3s ease;
 }
 
-/* Active icon and text color */
 .sidebar-item.active svg,
 .sidebar-item.active h1 {
 	color: #a678e2;
 }
+
 .sidebar-item:hover {
 	background-color: rgba(255, 255, 255, 0.04);
 	border-radius: 8px;

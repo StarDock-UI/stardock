@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-import Sidebar from '.././ui/Sidebar';
-import DocsHeader from '.././ui/DocsHeader';
+import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
@@ -27,7 +26,6 @@ const StylesPage = () => {
 
   return (
     <div className="docs-container">
-      <Sidebar />
       <div className="main-content">
         <DocsHeader />
         <Blob size="500px" top="20px" opacity={0.1} />
