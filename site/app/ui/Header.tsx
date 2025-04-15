@@ -48,15 +48,17 @@ const Header = () => {
 				</div>
 
 				<div className='right'>
-				
-					<input
-						ref={searchRef}
-						type='text'
-						placeholder='CTRL + K to search'
-						aria-label='Search'
-						className='searchInput'
-					/>
-					<Search className='searchIcon' />
+					<div className='searchBox'>
+						<input
+							ref={searchRef}
+							type='text'
+							placeholder='CTRL + K to search'
+							aria-label='Search'
+							className='searchInput'
+						/>
+						<Search className='searchIcon' />
+					</div>
+
 					<button
 						onClick={() => setDarkMode(!darkMode)}
 						className='iconToggle'
@@ -65,10 +67,11 @@ const Header = () => {
 						{darkMode ? (
 							<Sun className='toggleIcon' />
 						) : (
-							<Moon className='toggleIcon ' />
+							<Moon className='toggleIcon' />
 						)}
 					</button>
 				</div>
+
 			</div>
 		</header>
 	);
