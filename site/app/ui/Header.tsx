@@ -28,25 +28,20 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<div className='container'>
+				{/* LEFT: Logo + Nav */}
 				<div className='left'>
 					<Link href='/' className='logo'>
 						<Logo />
 						<h1>StarDock</h1>
 					</Link>
-
-
 				</div>
 				<nav className='nav'>
-					<Link href='/docs' className='navLink'>
-						Docs
-					</Link>
-					<Link href='/components' className='navLink'>
-						Components
-					</Link>
-					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
-						Github
-					</Link>
+					<Link href='/docs' className='navLink'>Docs</Link>
+					<Link href='/components' className='navLink'>Components</Link>
+					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>Github</Link>
 				</nav>
+
+				{/* RIGHT: Search + Toggle */}
 				<div className='right'>
 					<div className='searchBox'>
 						<input
@@ -64,16 +59,13 @@ const Header = () => {
 						className='iconToggle'
 						aria-label='Toggle Theme'
 					>
-						{darkMode ? (
-							<Sun className='toggleIcon' />
-						) : (
-							<Moon className='toggleIcon' />
-						)}
+						{darkMode ? <Sun className='toggleIcon' /> : <Moon className='toggleIcon' />}
 					</button>
 				</div>
-
 			</div>
 		</header>
+
+
 	);
 };
 

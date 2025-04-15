@@ -1,42 +1,36 @@
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 1rem 2rem;
-	background-color: #00000098;
-	backdrop-filter: blur(10px);
-	z-index: 1000;
-}
-
 .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 80%;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 1rem;
 	width: 100%;
-	overflow: hidden;
-	flex-wrap: nowrap;
 	gap: 1.5rem;
 }
 
 .left {
-	list-style: none;
 	display: flex;
-	margin: 0;
-	padding: 0;
+	align-items: center;
+	gap: 2rem;
 }
 
-/* Logo with text */
+.right {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-shrink: 0;
+}
+
+/* Logo */
 .logo {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 	text-decoration: none;
 	color: #9f7aea;
-	white-space: nowrap;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .logo h1 {
@@ -44,12 +38,10 @@
 	font-size: 1.5rem;
 }
 
-/* Nav section */
+/* Nav Links */
 .nav {
 	display: flex;
 	gap: 1rem;
-	flex-wrap: nowrap;
-	margin-right: 500px;
 }
 
 .navLink {
@@ -64,20 +56,11 @@
 	color: #9f7aea;
 }
 
-/* Right side: search + toggle */
-.right {
-	display: flex;
-	align-items: center;
-	flex-shrink: 0;
-	gap: 1rem;
-}
-
-/* Search input box */
+/* Search */
 .searchBox {
 	position: relative;
 	width: 240px;
 	min-width: 180px;
-	flex-shrink: 1;
 }
 
 .searchInput {
@@ -97,7 +80,7 @@
 	color: #aaa;
 }
 
-/* Theme toggle button */
+/* Toggle Button */
 .iconToggle {
 	background: transparent;
 	border: none;
