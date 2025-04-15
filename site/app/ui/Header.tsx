@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { Search, Sun, Moon } from 'lucide-react';
+import { Search, Sun, Moon, GithubIcon } from 'lucide-react';
 import '../styles/Header.css';
 import Logo from './Logo';
 
@@ -28,18 +28,19 @@ const Header = () => {
 	return (
 		<header className='header'>
 			<div className='container'>
-				{/* LEFT: Logo + Nav */}
 				<div className='left'>
 					<Link href='/' className='logo'>
 						<Logo />
 						<h1>StarDock</h1>
 					</Link>
+
+
 				</div>
 				<nav className='nav'>
 					<Link href='/docs' className='navLink'>
 						Docs
 					</Link>
-					<Link href='/docs/components' className='navLink'>
+					<Link href='/components' className='navLink'>
 						Components
 					</Link>
 					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
@@ -47,31 +48,33 @@ const Header = () => {
 					</Link>
 				</nav>
 
-				{/* RIGHT: Search + Toggle */}
-				<div className='right'>
-					<div className='searchBox'>
-						<input
-							ref={searchRef}
-							type='text'
-							placeholder='CTRL + K to search'
-							aria-label='Search'
-							className='searchInput'
-						/>
-						<Search className='searchIcon' />
-					</div>
-
-					<button
-						onClick={() => setDarkMode(!darkMode)}
-						className='iconToggle'
-						aria-label='Toggle Theme'
-					>
-						{darkMode ? <Sun className='toggleIcon' /> : <Moon className='toggleIcon' />}
-					</button>
+				<div className='searchBox'>
+					<input
+						ref={searchRef}
+						type='text'
+						placeholder='CTRL + K to search'
+						aria-label='Search'
+						className='searchInput'
+					/>
+					<Search className='searchIcon' />
 				</div>
+
+
+
+				{/* <button
+					onClick={() => setDarkMode(!darkMode)}
+					className='iconToggle'
+					aria-label='Toggle Theme'
+				>
+					{darkMode ? (
+						<Sun className='toggleIcon' />
+					) : (
+						<Moon className='toggleIcon' />
+					)}
+				</button> */}
+
 			</div>
 		</header>
-
-
 	);
 };
 
