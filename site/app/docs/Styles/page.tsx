@@ -7,7 +7,7 @@ import '@/app/styles/Docs.css';
 
 import { ChevronRight } from 'lucide-react';
 
-const ComponentsPage = () => {
+const StylesPage = () => {
   const leftLinkRef = useRef<HTMLAnchorElement>(null);
   const rightLinkRef = useRef<HTMLAnchorElement>(null);
 
@@ -32,31 +32,31 @@ const ComponentsPage = () => {
         <div className="content-section">
           <div className="breadcrumb">
             <ChevronRight />
-            <span>Components</span>
+            <span>Styles</span>
           </div>
 
-          <h1>Components Overview</h1>
+          <h1>Styling Guidelines</h1>
           <p>
-            Here you'll find all the reusable components that you can use in your application.
+            In this section, we’ll cover the general styling principles and best practices for the project.
           </p>
 
-          <h2>Available Components</h2>
+          <h2>Global Styles</h2>
           <p>
-            We have a variety of UI components, including buttons, cards, modals, and more. Explore and start using them in your app!
+            Learn how global styles are applied throughout the application. This includes typography, colors, and layout.
           </p>
 
-          <h2>How to Use Components</h2>
+          <h2>Component Styles</h2>
           <p>
-            To use a component, simply import it from the component library and include it in your JSX.
+            Each UI component has its own set of styles for consistency. These are defined within their respective folders.
           </p>
 
           <div className="navigation-buttons">
-            <Link href="/docs/guides" ref={leftLinkRef}>
-              <span className="Doc-button left-button">← Guides</span>
+            <Link href="/docs/components" ref={leftLinkRef}>
+              <span className="Doc-button left-button">← Components</span>
             </Link>
 
-            <Link href="/docs/Styles" ref={rightLinkRef}>
-              <span className="Doc-button right-button">Styles →</span>
+            <Link href="/docs/api-references" ref={rightLinkRef}>
+              <span className="Doc-button right-button">Api References →</span>
             </Link>
           </div>
         </div>
@@ -65,4 +65,4 @@ const ComponentsPage = () => {
   );
 };
 
-export default ComponentsPage;
+export default StylesPage;

@@ -15,11 +15,11 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body>
-				<div>
+				<>
 					<Sidebar />
 					<DocsHeader />
 					{children}
-				</div>
+				</>
 			</body>
 		</html>
 	);

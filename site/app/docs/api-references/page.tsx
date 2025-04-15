@@ -1,16 +1,27 @@
-import React from 'react';
-import Sidebar from '../ui/Sidebar';
+'use client';
+import React, { useEffect, useRef } from 'react';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
-
 import { ChevronRight } from 'lucide-react';
 
 const ApiPage = () => {
+  const getStartedRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') {
+        getStartedRef.current?.click();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="docs-container">
-      <Sidebar />
       <div className="main-content">
         <DocsHeader />
         <Blob size="500px" top="20px" opacity={0.1} />
@@ -35,13 +46,15 @@ const ApiPage = () => {
             Our API provides endpoints to interact with different parts of the system. For example, the `/users` endpoint allows you to manage users.
           </p>
 
-   
-<div className="navigation-buttons">
-  <Link href="/docs/getting-started" className="Doc-button right-button">
-    Get Started →
-  </Link>
-</div>
-
+          <div className="navigation-buttons">
+            <Link
+              href="/docs/getting-started"
+              className="Doc-button right-button"
+              ref={getStartedRef}
+            >
+              Get Started →
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -49,4 +62,3 @@ const ApiPage = () => {
 };
 
 export default ApiPage;
-

@@ -7,12 +7,10 @@ const DocsHeader = () => {
 	const [darkMode, setDarkMode] = useState(false);
 	const searchRef = useRef<HTMLInputElement>(null);
 
-	
 	useEffect(() => {
 		document.body.className = darkMode ? 'dark' : 'light';
 	}, [darkMode]);
 
-	
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
 			if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
@@ -27,14 +25,17 @@ const DocsHeader = () => {
 
 	return (
 		<div className='docsHeader'>
-			<Search className='searchIcon' />
-			<input
-				ref={searchRef}
-				type='text'
-				placeholder='CTRL + K to Search'
-				aria-label='Search'
-				className='searchInput'
-			/>
+			<div className='searchBar'>
+				<Search className='searchIcon' />
+				<input
+					ref={searchRef}
+					type='text'
+					// placeholder='S'
+					aria-label='Search'
+					className='searchInput'
+				/>
+				<div className='keybind'>CTRL+K</div>
+			</div>
 
 			<button
 				onClick={() => setDarkMode(!darkMode)}
