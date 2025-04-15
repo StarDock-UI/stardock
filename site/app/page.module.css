@@ -16,6 +16,7 @@
 .page {
 	position: relative;
     font-family: 'CabinetGrotesk', sans-serif;
+    min-height: 100vh;
 }
 
 /* @media (prefers-color-scheme: dark) {

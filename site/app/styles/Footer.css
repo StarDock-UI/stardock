@@ -1,115 +1,32 @@
 .footer {
-    padding: 40px 20px;
-    /* max-width: 1200px; */
-    margin-left: auto;
-    margin-left: auto;
-    background-color: #111;
-    color: #eee;
-    font-family: sans-serif;
-  }
- 
-  
-  
-  .footer-content {
-    display: flex;
+	background-color: #00000098;
+	padding: 20px;
+	text-align: center;
+	height: 50vh;
+	display: flex;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	align-items: start;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .about {
-    width: 100%;
-    max-width: 400px;
-  }
-  /* .about p {
-    font-size: 16px;
-    color: #ccc;
-    margin-top: 15px;
-    text-align: justify;
-  } */
-  
-  .about p b {
-    font-weight: bold;
-    color: white;
-  }
-  
-  
-  .heading {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 8px;
-  }
-  
-  .tagline {
-    font-size: 16px;
+}
+
+.right {
+	display: flex;
+	gap: 100px;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 10px;
     font-style: italic;
-    color: #bbb;
-    margin-bottom: 16px;
-  }
-  
-  .get-started-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #7f52c7;
-    border: 2px solid transparent;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  }
-  
-  .get-started-btn:hover {
-    background-color: #6a0dad;
-    border-color: white;
-  }
-  
-  .cards{
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section {
-    width: 150px;
-  }
-  
-  .footer-section h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section a {
-    display: block;
-    font-size: 14px;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 8px;
-  }
-  
-  .footer-section a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  hr {
-    border: none;
-    border-top: 1px solid #444;
-    margin: 20px 0;
-  }
-  
-  .copyRight {
-    text-align: center;
-    font-size: 14px;
-    color: rgb(152, 149, 149);
-    padding-top: 10px;
-  }
-  
+}
+
+.links h1 {
+  font-style: normal;
+}

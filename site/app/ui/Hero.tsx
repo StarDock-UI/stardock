@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import '../styles/Hero.css';
 import Copy from './Copy';
+import '../styles/Hero.css';
 
 const Hero = () => {
 	return (
@@ -9,9 +9,8 @@ const Hero = () => {
 			{/* <div className='badge'>Hackathon Project</div> */}
 
 			<h1 className='hero-title'>
-				Everything You Need.
-				<br />
-				<span className='highlight'>Nothing You Don't.</span>
+				Everything You Need,  
+				<span className='highlight'> Nothing You Don't.</span>
 			</h1>
 
 			<p className='hero-subtitle'>
@@ -24,15 +23,13 @@ const Hero = () => {
 				<button className='btn primary'>Get Started</button>
 				<button className='btn secondary'>Documentation</button>
 			</div>
-			<div className='install-wrapper'>
-				<code className='code-block' id='code-block'>
+			<div className='copy-wrapper'>
+				<code className='copy-block' id='code-block'>
 					npm i stardock@latest
 				</code>
 				<Copy />
 			</div>
 		</section>
-
-
 	);
 };
 

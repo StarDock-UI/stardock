@@ -1,66 +1,39 @@
-import React from "react";
-import "../styles/Footer.css"
+import React from 'react';
+import '../styles/Footer.css';
+import Link from 'next/link';
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-content">
-        
-        <div className="about">
-  <h1 className="heading">StarDock</h1>
-  <p className="tagline">Build Fast. Ship Clean. UI Simplified.</p>
-  <p>
-    StarDock is a modern UI toolkit for building fast, responsive, and
-    accessible web interfaces.
-  </p>
-  <a href="/getting-started" className="get-started-btn">Get Started</a>
-</div>
-
-
-       
-        <div className="cards">
-          <div className="footer-section">
-            <h1>Learn</h1>
-            <ul>
-              <li><a href="/getting-started">Getting Started</a></li>
-              <li><a href="/components">Components</a></li>
-              <li><a href="/layouts">Layouts</a></li>
-              <li><a href="/theming">Theming</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h1>Resources</h1>
-            <ul>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/changelog">Changelog</a></li>
-              <li><a href="/roadmap">Roadmap</a></li>
-              <li><a href="/github">GitHub</a></li>
-              <li><a href="/support">Support</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h1>Community</h1>
-            <ul>
-              <li><a href="/join">Join Discord</a></li>
-              <li><a href="/Github">GitHub Discussions</a></li>
-              <li><a href="/showcase">Showcase</a></li>
-              <li><a href="/contribute">Contribute</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <div className="copyRight">
-        <p>
-          © 2025 <b>StarDock.in</b> — Designed and developed by the StarDock team. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  );
+	return (
+		<footer className='footer'>
+			<div className='container'>
+				<div className='left'>
+					<div className='headline'>
+						<h1>StarDock</h1>
+						<p>A CSS library with beauty.</p>
+					</div>
+					<div className='contributers'>
+						<p>Made with love by @Nikhil | @Rohan | @Diya | @Mahima</p>
+					</div>
+				</div>
+				<div className='right'>
+					<div className='links'>
+						<h1>Learn</h1>
+						<Link href='/docs/getting-started'>Getting Started</Link>
+						<Link href='/docs/components'>Components</Link>
+						<Link href='/docs/classes'>Classes</Link>
+						<Link href='/docs/layout'>Layout</Link>
+					</div>
+					<div className='links'>
+						<h1>Resources</h1>
+						<Link href='https://github.com/StarDock-UI/stardock.git'>Github</Link>
+						<Link href='/docs/changelogs'>Changelogs</Link>
+						<Link href='/docs/support'>Support</Link>
+						<Link href='/docs/showcase'>Showcase</Link>
+					</div>
+				</div>
+			</div>
+		</footer>
+	);
 };
 
 export default Footer;

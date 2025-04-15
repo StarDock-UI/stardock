@@ -1,10 +1,10 @@
 .header {
 	padding: 1.25rem 1.25rem;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	background-color: #00000099;
 	position: fixed;
+    height: 72px;
 	left: 0;
 	right: 0;
 	top: 0;
