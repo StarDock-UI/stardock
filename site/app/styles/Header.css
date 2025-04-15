@@ -93,6 +93,15 @@
 }
 
 .searchIcon {
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 18px;
+	height: 18px;
+	color: var(--accent);
+	cursor: pointer;
+	transition: color 0.3s ease;
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 10px;
