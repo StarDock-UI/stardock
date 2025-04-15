@@ -19,9 +19,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -34,6 +31,41 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.footer {
+  background-color: #00000098;
+  padding: 20px;
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  z-index: 1000;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  gap: 100px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  font-style: italic;
+}
+
+.links h1 {
+font-style: normal;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
