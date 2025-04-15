@@ -7,10 +7,23 @@ import Logo from './Logo';
 
 const Header = () => {
 	const [darkMode, setDarkMode] = useState(false);
+	const searchRef = React.useRef<HTMLInputElement>(null);
 
 	useEffect(() => {
 		document.body.className = darkMode ? 'dark' : 'light';
 	}, [darkMode]);
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+				e.preventDefault();
+				searchRef.current?.focus();
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => window.removeEventListener('keydown', handleKeyDown);
+	}, []);
 
 	return (
 		<header className='header'>
@@ -35,13 +48,15 @@ const Header = () => {
 				</div>
 
 				<div className='right'>
+				
 					<input
+						ref={searchRef}
 						type='text'
 						placeholder='CTRL + K to search'
 						aria-label='Search'
 						className='searchInput'
 					/>
-
+					<Search className='searchIcon' />
 					<button
 						onClick={() => setDarkMode(!darkMode)}
 						className='iconToggle'
