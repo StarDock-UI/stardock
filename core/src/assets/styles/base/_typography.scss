@@ -1,0 +1,15 @@
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+
+body {
+  font-size: $font-size-base;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
