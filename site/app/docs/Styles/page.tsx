@@ -16,12 +16,9 @@ const StylesPage = () => {
         <DocsHeader />
         <Blob size="500px" top="20px" opacity={0.1} />
         <div className="content-section">
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Styles</span>
-          </div>
+          
 
-          <h1>Styling Your Components</h1>
+          <h2>Styling Your Components</h2>
           <p>This guide will walk you through customizing Clerk's prebuilt UI to match your application’s branding.</p>
 
           <h2>CSS Customization</h2>
