@@ -14,6 +14,7 @@ import {
   SlidersHorizontal,
   Terminal,
   FileCode,
+  ChevronLeft,
 } from 'lucide-react';
 
 const ConfigurationPage = () => {
@@ -91,7 +92,7 @@ NEXT_PUBLIC_AUTH_KEY=your-auth-key`}
           {/* Navigation Buttons */}
           <div className="navigation-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
             <Link href="/docs">
-              <span className="Doc-button left-button">← Home</span>
+              <span className="Doc-button left-button"> <ChevronLeft/> Home</span>
             </Link>
           </div>
         </div>

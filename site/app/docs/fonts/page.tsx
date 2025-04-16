@@ -14,6 +14,7 @@ import {
   Type,
   TextCursorInput, // ✅ Replaced the invalid 'Font' icon
   Globe,
+  ChevronLeft,
 } from 'lucide-react';
 
 const FontsPage = () => {
@@ -96,10 +97,10 @@ body {
           {/* Navigation Buttons */}
           <div className="navigation-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
             <Link href="/docs/styles">
-              <span className="Doc-button left-button">← Styles</span>
+              <span className="Doc-button left-button"> <ChevronLeft/>Styles</span>
             </Link>
             <Link href="/docs/configuration">
-              <span className="Doc-button right-button">Configuration →</span>
+              <span className="Doc-button right-button">Configuration <ChevronRight/></span>
             </Link>
           </div>
         </div>
