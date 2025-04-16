@@ -1,0 +1,82 @@
+.footer {
+	background-color: #060606;
+	padding: 3rem 0;
+	z-index: 1000;
+	position: relative;
+	border-top: 1px solid #333;
+	margin-left: 250px;
+}
+
+.container {
+	max-width: 800px;
+	height: 40vh;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.left {
+	flex: 1;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1.5rem;
+}
+
+.left .headline h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.left .headline p {
+	color: #a1a1aa;
+	font-size: 1rem;
+}
+
+.contributers p {
+	font-size: 0.9rem;
+	color: #71717a;
+}
+
+.contributers span {
+	color: #e2e8f0;
+}
+
+.right {
+	flex: 1;
+	min-width: 250px;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.links h1 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #f4f4f5;
+	margin-bottom: 0.5rem;
+}
+
+.links a {
+	color: #a1a1aa;
+	font-size: 0.95rem;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.links a:hover {
+	color: #ffffff;
+	transform: translateX(2px);
+}

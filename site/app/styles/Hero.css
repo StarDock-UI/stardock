@@ -1,22 +1,25 @@
 .hero-section {
 	height: 100vh;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 0 1rem;
-	box-sizing: border-box;
 }
 
 .hero-title {
-	font-size: clamp(2.5rem, 6vw, 4rem);
+	font-size: 3.5rem;
 	margin-bottom: 10px;
-	font-family: 'CabinetGrotesk-Bold', sans-serif;
+	/* font-family: 'CabinetGrotesk-Bold', sans-serif; */
+}
+
+.highlight {
+	color: #7f52c7;
 }
 
 .hero-subtitle {
-	font-size: clamp(1rem, 3vw, 1.5rem);
+	font-size: 1.5rem;
 	margin-bottom: 10px;
 }
 
@@ -24,62 +27,65 @@
 	display: flex;
 	gap: 20px;
 	margin-top: 20px;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .btn {
 	padding: 12px 24px;
-	font-size: 0.9rem;
 	border: none;
 	border-radius: 8px;
 	cursor: pointer;
 	transition: all 0.3s ease;
 	width: fit-content;
 	min-width: 160px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
-.install-wrapper {
+.btn:hover {
+    background-color: #190042;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-primary {
+	background-color: #7f52c7;
+}
+
+.btn-secondary {
+	border: 2px solid #7f52c7;
+    background-color: transparent;
+}
+
+.copy-wrapper {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	margin-top: 40px;
 	flex-wrap: wrap;
 	justify-content: center;
+	position: absolute;
+	bottom: 100px;
 }
 
-.code-block {
-	background-color: #2d2d2d;
+.copy-block {
+	background-color: #00000099;
 	padding: 10px 15px;
 	border-radius: 5px;
 	font-size: 0.9rem;
 	white-space: nowrap;
 }
 
-.copy {
-	position: static;
+.copy-svg {
+	position: absolute;
+	right: -16rem;
+    top: 20%;
 }
 
-
-@media (max-width: 768px) {
-	.hero-buttons {
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
-	}
-
-	.btn {
-		width: 100%;
-		max-width: 300px;
-	}
-
-	.code-block {
-		font-size: 0.85rem;
-	}
-
-	.install-wrapper {
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
-	}
+.badge {
+	border: 2px solid #7f52c7;
+	padding: 5px 30px;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	margin-left: 10px;
+	position: absolute;
+	top: 150px;
 }

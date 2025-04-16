@@ -1,20 +1,16 @@
-import Image from 'next/image';
 import HeroSection from './ui/Hero';
 import Header from './ui/Header';
-import Footer from './ui/Footer';
-import styles from './page.module.css';
 import Blob from './ui/Blob';
-import StarOutline from './ui/StarOutline';
+import Features from './ui/Features';
 
 export default function Home() {
 	return (
-		<div className={styles.page}>
+		<>
 			<Header />
 			<HeroSection />
-			<Footer />
+			<Features />
 			<Blob top='100px' left='10px' opacity={0.3} />
-			<Blob top='300px' right='10px' opacity={0.2} size='800px' />
-			<StarOutline />
-		</div>
+			<Blob top='300px' right='10px' opacity={0.2} size='500px' />
+		</>
 	);
 }

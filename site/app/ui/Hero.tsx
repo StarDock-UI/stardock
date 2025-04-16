@@ -1,17 +1,16 @@
-'use client';
 import React from 'react';
-import '../styles/Hero.css';
 import Copy from './Copy';
+import '@/app/styles/Hero.css';
+import Link from 'next/link';
 
 const Hero = () => {
 	return (
 		<section className='hero-section'>
-			{/* <div className='badge'>Hackathon Project</div> */}
+			<div className='badge'>20+ Built-In Components</div>
 
 			<h1 className='hero-title'>
-				Everything You Need.
-				<br />
-				<span className='highlight'>Nothing You Don't.</span>
+				Everything You Need,  
+				<span className='highlight'> Nothing You Don't.</span>
 			</h1>
 
 			<p className='hero-subtitle'>
@@ -21,18 +20,16 @@ const Hero = () => {
 			</p>
 
 			<div className='hero-buttons'>
-				<button className='btn primary'>Get Started</button>
-				<button className='btn secondary'>Documentation</button>
+				<Link href='/docs/getting-started' className='btn-primary btn'>Get Started</Link>
+				<Link href='/docs' className='btn-secondary btn'>Documentation</Link>
 			</div>
-			<div className='install-wrapper'>
-				<code className='code-block' id='code-block'>
+			<div className='copy-wrapper'>
+				<code className='copy-block' id='code-block'>
 					npm i stardock@latest
 				</code>
 				<Copy />
 			</div>
 		</section>
-
-
 	);
 };
 

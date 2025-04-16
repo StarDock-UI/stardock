@@ -2,44 +2,58 @@
 	position: fixed;
 	top: 0;
 	left: 250px;
-	right: 0;
-	display: flex;
-	width: 100%;
-	background: #00000099;
-	backdrop-filter: blur(12px);
-    padding: 20px;
-	display: flex;
-	justify-content: flex-start;
+	width: 80%;
+	height: 80px; /* or whatever height you want */
+	background-color: #000000cc; /* solid background color */
+	color: white;
+	z-index: 1000; /* ensure it's above other elements */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
 }
-input{
-	width:400px;
-	border-radius: 8px;
-	outline: none;            
-	box-shadow: none; 
-	padding-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 
-}
-button{
-	margin-left: 600px;
+input {
+	margin-left: 150px;
+	margin-top: 25px;
+	width: 150px;
 	border-radius: 8px;
-	
+	outline: none;
+    font-size: 18px;
+    padding-left: 300px;
+	box-shadow: none;
+	border: none;
+	height: 40px;
+}
+
+.searchBar {
+	position: relative;
+	height: fit-content;
+}
+
+.keybind {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.searchIcon {
+	position: absolute;
+	left: 165px;
+	top: 58%;
+	transform: translateY(-50%);
+}
+
+button {
+	margin-top: 0px;
+	margin-left: 850px;
+	border-radius: 8px;
 }
 .searchInput::placeholder {
-	color: #ffffffcc; 
+	color: #ffffffcc;
 	font-weight: 500;
 	font-size: 16px;
 	letter-spacing: 0.3px;
-	
 }
-.searchIcon {
-	position: absolute;
-	left: 35px; 
-	top: 50%;
-	transform: translateY(-50%);
-	color: #ffffffcc;
-}
+
 .iconToggle {
 	background: none;
 	border: none;
