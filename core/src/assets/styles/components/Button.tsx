@@ -1,5 +1,6 @@
 import React from 'react';
 import './Button.scss';
+import '../nova.scss'
 
 interface ButtonProps {
 	label: string;
