@@ -6,7 +6,6 @@ const Features = () => {
     <section className="features-section">
       <h1 className="features-title">Web Building Experience</h1>
       
-      {/* Row 1: Two big cards */}
       <div className="features-grid-row large-row">
         <div className="feature-card large-card">
           <div className="image-placeholder"></div>
@@ -27,7 +26,6 @@ const Features = () => {
         </div>
       </div>
 
-      {/* Row 2: Three smaller cards */}
       <div className="features-grid-row small-row">
         <div className="feature-card small-card">
           <div className="image-placeholder"></div>
