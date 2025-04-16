@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from 'next/link'; 
 import React, { useEffect, useState } from 'react';
 import { Search, Sun, Moon, GithubIcon } from 'lucide-react';
 import '../styles/Header.css';
