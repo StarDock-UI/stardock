@@ -1,0 +1,132 @@
+/* ===== Footer Base ===== */
+.footer {
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #2a2a2a;
+}
+
+/* ===== Footer Wrapper ===== */
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Aligns brand left and links right */
+  gap: 18rem; /* More space between brand and links */
+  flex-wrap: wrap;
+}
+
+/* ===== Brand Section (StarDock) ===== */
+.footer-brand {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.footer-brand h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.footer-brand p {
+  color: #a1a1aa;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.credits {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* ===== Link Columns Section (Learn & Resources) ===== */
+.footer-columns {
+  flex: 2 1 600px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12rem; /* Reduced space between Learn and Resources */
+}
+
+/* ===== Each Link Column ===== */
+.footer-col {
+  flex: 1;
+  min-width: 150px;
+  text-align: left;
+}
+
+.footer-col h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Links Styling ===== */
+.footer-col a,
+.email-link {
+  color: #b5b5b5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  text-align: left;
+}
+
+.footer-col a:hover,
+.email-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #333;
+  padding-top: 1.5rem;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-col {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+  }
+}
+
+/* Credits link styling */
+.credits a {
+  color: #a1a1aa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.credits a:hover {
+  color: #ffffff;
+}
