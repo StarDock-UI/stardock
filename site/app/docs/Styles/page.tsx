@@ -1,5 +1,7 @@
 'use client';
-import React from 'react';
+
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -16,6 +18,22 @@ import {
 } from 'lucide-react';
 
 const StylesPage = () => {
+	const router = useRouter();
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'ArrowLeft') {
+				router.push('/docs/components');
+			} else if (e.key === 'ArrowRight') {
+				router.push('/docs/fonts');
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [router]);
 	return (
 		<div className='docs-container'>
 			<Sidebar />
@@ -80,11 +98,11 @@ const StylesPage = () => {
 						className='navigation-buttons'
 						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}
 					>
-						<Link href='/docs/guides'>
-							<span className='Doc-button left-button'>← Components</span>
+						<Link href='/docs/styles'>
+							<span className='Doc-button left-button'>← Styles</span>
 						</Link>
-						<Link href='/docs/api-references'>
-							<span className='Doc-button right-button'> API References →</span>
+						<Link href='/docs/fonts'>
+							<span className='Doc-button right-button'> Fonts →</span>
 						</Link>
 					</div>
 				</div>

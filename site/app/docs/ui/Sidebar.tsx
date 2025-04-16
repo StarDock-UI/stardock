@@ -26,7 +26,7 @@ const Sidebar = () => {
     { href: '/docs/getting-started', label: 'Getting Started', icon: <CheckCircle2 /> },
     { href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
     { href: '/docs/components', label: 'Components', icon: <Box /> },
-    { href: '/docs/styles', label: 'Styles', icon: <Palette /> },
+    { href: '/docs/styles', label: 'styles', icon: <Palette /> },
     { href: '/docs/fonts', label: 'Fonts', icon: <Type /> },
     { href: '/docs/configuration', label: 'Configuration', icon: <Settings /> },
   ]
