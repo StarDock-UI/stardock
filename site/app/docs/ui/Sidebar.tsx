@@ -10,7 +10,10 @@ import {
   Code,
   Home,
   Palette,
+  Settings,
+  Type,
 } from 'lucide-react'
+
 
 import '@/app/styles/Sidebar.css'
 import Logo from '@/app/ui/Logo'
@@ -24,8 +27,10 @@ const Sidebar = () => {
     { href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
     { href: '/docs/components', label: 'Components', icon: <Box /> },
     { href: '/docs/styles', label: 'Styles', icon: <Palette /> },
-    { href: '/docs/api-references', label: 'API References', icon: <Code /> },
+    { href: '/docs/fonts', label: 'Fonts', icon: <Type /> },
+    { href: '/docs/configuration', label: 'Configuration', icon: <Settings /> },
   ]
+  
 
   return (
     <div className="sidebar">
