@@ -15,6 +15,7 @@ import {
 	Brush,
 	Code2,
 	Globe,
+	ChevronLeft,
 } from 'lucide-react';
 
 const StylesPage = () => {
@@ -99,10 +100,13 @@ const StylesPage = () => {
 						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}
 					>
 						<Link href='/docs/styles'>
-							<span className='Doc-button left-button'>← Styles</span>
+							<span className='Doc-button left-button'> <ChevronLeft/> Components</span>
 						</Link>
 						<Link href='/docs/fonts'>
-							<span className='Doc-button right-button'> Fonts →</span>
+							
+							<span className='Doc-button right-button'>
+															Fonts <ChevronRight/>
+														</span>
 						</Link>
 					</div>
 				</div>
