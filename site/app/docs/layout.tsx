@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import DocsHeader from './ui/DocsHeader';
 import Sidebar from './ui/Sidebar';
+import DocsFooter from './ui/DocsFooter';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -19,6 +20,7 @@ export default function RootLayout({
 					<Sidebar />
 					<DocsHeader />
 					{children}
+					<DocsFooter />
 				</>
 			</body>
 		</html>

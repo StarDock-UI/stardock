@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import '@/app/styles/Footer.css';
+import '@/app/docs/css/DocsFooter.css';
 
 const DocsFooter = () => {
 	return (
-		<footer className='docsFooter'>
+		<footer className='footer'>
 			<div className='container'>
 				<div className='left'>
 					<div className='headline'>
