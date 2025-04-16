@@ -32,6 +32,9 @@
 	transition: all 0.3s ease;
 	text-align: left;
 	height: 20rem;
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .feature-card:hover {
