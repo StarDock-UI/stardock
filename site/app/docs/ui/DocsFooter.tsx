@@ -29,7 +29,6 @@ const DocsFooter = () => {
 						<div className='links'>
 						<h1>Contact</h1>
 						<a href='mailto:contact@stardock-ui.dev'>contact@stardock-ui.dev</a>
-
 					</div>
 					</div>
 					
