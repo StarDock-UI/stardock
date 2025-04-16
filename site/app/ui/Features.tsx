@@ -1,11 +1,49 @@
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
 const Features = () => {
-  return (
-    <div className='section'>
-      
-    </div>
-  )
-}
+	return (
+		<div className='section'>
+			<div>
+				<div>
+					<div>
+						<h1>Utility-First Classes</h1>
+						<p>Atomic CSS classes to build any UI fast</p>
+					</div>
+					<div>
+						<Image src='' alt='' width={512} height={512} />
+					</div>
+				</div>
+				<div>
+					<div>
+						<h1>Utility-First Classes</h1>
+						<p>Atomic CSS classes to build any UI fast</p>
+					</div>
+					<div>
+						<Image src='' alt='' width={512} height={512} />
+					</div>
+				</div>
+				<div>
+					<div>
+						<h1>Utility-First Classes</h1>
+						<p>Atomic CSS classes to build any UI fast</p>
+					</div>
+					<div>
+						<Image src='' alt='' width={512} height={512} />
+					</div>
+				</div>
+				<div>
+					<div>
+						<h1>Utility-First Classes</h1>
+						<p>Atomic CSS classes to build any UI fast</p>
+					</div>
+					<div>
+						<Image src='' alt='' width={512} height={512} />
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
 
-export default Features
+export default Features;
