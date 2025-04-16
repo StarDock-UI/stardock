@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -21,21 +22,31 @@ import {
 } from 'lucide-react';
 
 const GuidesPage = () => {
+	const router = useRouter();
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'ArrowRight') {
+				router.push('/docs/components');
+			} else if (e.key === 'ArrowLeft') {
+				router.push('/docs/getting-started');
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [router]);
+
 	return (
 		<div className='docs-container'>
 			<Sidebar />
-
 			<div className='main-content'>
 				<DocsHeader />
 				<Blob size='500px' top='20px' opacity={0.1} />
 
 				<div className='content-section'>
-					{/* Breadcrumb */}
-					<div className='breadcrumb'>
-						<ChevronRight />
-						<span>Guides</span>
-					</div>
-
 					<h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
 						<BookOpen size={20} /> StarDock Guides
 					</h2>

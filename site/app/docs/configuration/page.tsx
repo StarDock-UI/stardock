@@ -1,5 +1,7 @@
 'use client';
-import React from 'react';
+
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -15,6 +17,21 @@ import {
 } from 'lucide-react';
 
 const ConfigurationPage = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        router.push('/docs');  // Navigate to the home page on left arrow
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [router]);
+
   return (
     <div className="docs-container">
       <Sidebar />
@@ -23,12 +40,6 @@ const ConfigurationPage = () => {
         <Blob size="500px" top="20px" opacity={0.1} />
 
         <div className="content-section">
-          {/* Breadcrumb */}
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Configuration</span>
-          </div>
-
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Settings size={20} /> Initial Configuration
           </h2>
@@ -82,7 +93,6 @@ NEXT_PUBLIC_AUTH_KEY=your-auth-key`}
             <Link href="/docs">
               <span className="Doc-button left-button">← Home</span>
             </Link>
-           
           </div>
         </div>
       </div>
