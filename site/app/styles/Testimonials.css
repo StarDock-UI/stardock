@@ -1,5 +1,7 @@
 .testimonials-section {
-    background: linear-gradient(to bottom right, #fdf0f3, #f8f5f7);
+    background: linear-gradient(to bottom right,#1b1b1b
+#1b1b1b
+    );
     padding: 60px 20px;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
@@ -25,7 +27,7 @@
     margin-bottom: 40px;
   }
   
-  /* Grid layout for 3x2 */
+
   .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -35,7 +37,7 @@
   }
   
   .testimonial-card {
-    background: #fff;
+    background: #1b1b1b;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -86,7 +88,7 @@
   
   .testimonial-text {
     font-size: 0.95rem;
-    color: #333;
+    color: white;
     line-height: 1.5;
   }
   

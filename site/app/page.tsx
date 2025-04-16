@@ -2,7 +2,7 @@ import HeroSection from './ui/Hero';
 import Header from './ui/Header';
 import Blob from './ui/Blob';
 import Features from './ui/Features';
-import Testimonials from "./ui/Testimoinals"
+import Testimonials from "./ui/Testimoinals";
 
 export default function Home() {
 	return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/Testimonials.css";
+import { TwitchIcon, Twitter } from 'lucide-react';
 
 const testimonials = [
   {
@@ -58,7 +59,7 @@ const Testimonials = () => {
                 <h4>{item.name}</h4>
                 <p className="username">{item.username}</p>
               </div>
-              <span className="close-btn">✕</span>
+              <span className="close-btn"><Twitter/></span>
             </div>
             <p className="testimonial-text">{item.text}</p>
           </div>
