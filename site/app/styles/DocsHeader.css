@@ -1,72 +1,76 @@
 .docsHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2rem;
 	position: fixed;
 	top: 0;
 	left: 250px;
-	width: 80%;
-	height: 80px; /* or whatever height you want */
-	background-color: #000000cc; /* solid background color */
+	right: 0;
+	height: 80px;
+	background-color: #000000cc;
 	color: white;
-	z-index: 1000; /* ensure it's above other elements */
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
-}
-
-input {
-	margin-left: 150px;
-	margin-top: 25px;
-	width: 150px;
-	border-radius: 8px;
-	outline: none;
-    font-size: 18px;
-    padding-left: 300px;
-	box-shadow: none;
-	border: none;
-	height: 40px;
+	z-index: 1000;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .searchBar {
+	margin-left: 600px;
 	position: relative;
-	height: fit-content;
+	display: flex;
+	align-items: center;
 }
 
-.keybind {
-	position: absolute;
-	right: 10px;
-	top: 50%;
-	transform: translateY(-50%);
+.searchInput {
+	width: 250px;
+	border-radius: 6px;
+	outline: none;
+	font-size: 14px;
+	padding: 0.35rem 2.8rem 0.35rem 2.2rem; /* adjusted padding for smaller box */
+	border: none;
+	height: 32px; /* reduced from 40px */
+	background-color: #1e1e1e;
+	color: white;
 }
 
 .searchIcon {
 	position: absolute;
-	left: 165px;
-	top: 58%;
+	left: 8px;
+	top: 50%;
 	transform: translateY(-50%);
+	color: white;
+	width: 16px;
+	height: 16px;
 }
 
-button {
-	margin-top: 0px;
-	margin-left: 850px;
-	border-radius: 8px;
+.keybind {
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 12px;
+	color: #aaa;
+	background-color: #2c2c2c;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-family: monospace;
+	pointer-events: none;
+	user-select: none;
 }
-.searchInput::placeholder {
-	color: #ffffffcc;
-	font-weight: 500;
-	font-size: 16px;
-	letter-spacing: 0.3px;
-}
-
 .iconToggle {
 	background: none;
 	border: none;
 	cursor: pointer;
-	padding: 0.4rem;
+	padding: 0.5rem;
 	border-radius: 50%;
 	transition: background-color 0.3s ease;
+	margin-left: 1rem;
 }
 
 .toggleIcon {
-	width: 20px;
-	height: 20px;
-	color: var(--accent);
+	width: 24px;
+	height: 24px;
+	color: var(--accent, #facc15);
 	transition: transform 0.3s ease;
 }
 
