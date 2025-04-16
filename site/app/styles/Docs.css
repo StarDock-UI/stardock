@@ -61,9 +61,10 @@
 /* Main layout */
 .docs-container {
 	display: flex;
-	margin-left: 300px;
-	min-height: 100vh;
-	font-family: sans-serif;
+	margin-left: 250px;
+    flex-direction: column;
+    padding: 2rem;
+    min-height: 100vh;
   }
   
   /* Sidebar styles */

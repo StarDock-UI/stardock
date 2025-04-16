@@ -11,8 +11,9 @@
 }
 
 input {
-	margin-top: 30px;
-	width: 400px;
+	margin-left: 150px;
+	margin-top: 25px;
+	width: 150px;
 	border-radius: 8px;
 	outline: none;
     font-size: 18px;
@@ -36,8 +37,8 @@ input {
 
 .searchIcon {
 	position: absolute;
-	left: 30px;
-	top: 62%;
+	left: 165px;
+	top: 58%;
 	transform: translateY(-50%);
 }
 

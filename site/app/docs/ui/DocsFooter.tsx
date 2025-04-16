@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import '@/app/styles/Footer.css';
+import '@/app/docs/css/DocsFooter.css';
 
-const Footer = () => {
+const DocsFooter = () => {
 	return (
 		<footer className='footer'>
 			<div className='container'>
@@ -36,4 +36,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default DocsFooter;

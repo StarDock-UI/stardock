@@ -37,6 +37,14 @@
 	transition: all 0.3s ease;
 	width: fit-content;
 	min-width: 160px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #190042;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -79,5 +87,5 @@
 	font-size: 0.8rem;
 	margin-left: 10px;
 	position: absolute;
-	top: 200px;
+	top: 150px;
 }
