@@ -101,7 +101,7 @@ const ComponentsPage = () => {
             <Link href="/docs/guides">
               <span className="Doc-button left-button">← Guides</span>
             </Link>
-            <Link href="/docs/api-references">
+            <Link href="/docs/styles">
               <span className="Doc-button right-button">Styles →</span>
             </Link>
           </div>

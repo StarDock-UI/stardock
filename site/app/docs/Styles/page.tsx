@@ -74,11 +74,12 @@ const StylesPage = () => {
         
         {/* Navigation Buttons */}
         <div className="navigation-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-            <Link href="/docs/guides">
+            <Link href="/docs/components">
               <span className="Doc-button left-button">← Components</span>
             </Link>
-            <Link href="/docs/api-references">
-              <span className="Doc-button right-button">    API References
+            <Link href="/docs/fonts">
+              <span className="Doc-button right-button"> 
+                   Fonts
               →</span>
             </Link>
           </div>
