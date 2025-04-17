@@ -1,55 +1,105 @@
 import React from 'react';
-import "../styles/Features.css";
+import styles from '../styles/Features.module.css';
+import Image from 'next/image';
 
 const Features = () => {
-  return (
-    <section className="features-section">
-      <h1 className="features-title">Web Building Experience</h1>
-      
-      <div className="features-grid-row large-row">
-        <div className="feature-card large-card">
-          <div className="image-placeholder"></div>
-          <h3>AI-Powered Design Assistance</h3>
-          <p>
-            Get personalized design recommendations with AI-powered tools that help
-            you create a polished, professional website effortlessly.
-          </p>
-        </div>
+	return (
+		<section className={styles.featuresSection}>
+			<h1 className={styles.featuresTitle}>Web Building Experience</h1>
 
-        <div className="feature-card large-card">
-          <div className="image-placeholder"></div>
-          <h3>Customizable Templates</h3>
-          <p>
-            Choose from a wide range of professionally designed templates. Easily
-            customize fonts, colors, and layouts to reflect your brand.
-          </p>
-        </div>
-      </div>
+			<div className={styles.largeRow}>
+				<div className={`${styles.featureCard} ${styles.largeCard}`}>
+					<div className={styles.imagePlaceholder}>
+						<Image
+							src='/icons/components.gif'
+							alt='Components'
+							width={200}
+							height={200}
+							className={styles.transparent}
+						/>
+					</div>
+					<h3>Pre-Built Components</h3>
+					<p>
+						Speed up development with clean, customizable UI components like buttons,
+						modals, and cards—ready to use out of the box.
+					</p>
+				</div>
 
-      <div className="features-grid-row small-row">
-        <div className="feature-card small-card">
-          <div className="image-placeholder"></div>
-          <h3>SEO Tools Built-In</h3>
-          <p>Boost your website’s visibility with integrated SEO tools.</p>
-        </div>
+				<div className={`${styles.featureCard} ${styles.largeCard}`}>
+					<div className={styles.imagePlaceholder}>
+						<Image
+							src='/icons/style.gif'
+							alt='Components'
+							width={200}
+							height={200}
+							className={styles.transparent}
+						/>
+					</div>
+					<h3>Utility-First Classes</h3>
+					<p>
+						Write less CSS and build faster using utility classes for spacing,
+						typography, colors, layout, and more. Inspired by Tailwind, crafted for
+						flexibility.
+					</p>
+				</div>
+			</div>
 
-        <div className="feature-card small-card">
-          <div className="image-placeholder"></div>
-          <h3>Seamless Integrations</h3>
-          <p>
-            Easily connect with your favorite apps and services for a website
-            experience.
-          </p>
-        </div>
+			<div className={styles.smallRow}>
+				<div className={`${styles.featureCard} ${styles.smallCard}`}>
+					<div className={styles.imagePlaceholder}>
+						<Image
+							src='/icons/typo.gif'
+							alt='Components'
+							width={200}
+							height={200}
+							className={styles.transparent}
+						/>
+					</div>
+					<h3>Typography System</h3>
+					<p>
+						Well-structured typography utilities for headings, body text, and
+						responsive type scales.
+					</p>
+				</div>
 
-        <div className="feature-card small-card">
-          <div className="image-placeholder"></div>
-          <h3>Responsive Design</h3>
-          <p>Create websites that look stunning on any device.</p>
-        </div>
-      </div>
-    </section>
-  );
+				<div className={`${styles.featureCard} ${styles.smallCard}`}>
+					<div className={styles.imagePlaceholder}>
+						{' '}
+						<Image
+							src='/icons/code.gif'
+							alt='Components'
+							width={200}
+							height={200}
+							className={styles.transparent}
+						/>
+					</div>
+					<h3>Dev-Friendly Naming</h3>
+					<p>
+						Clear, consistent, and memorable class names—easy to write, easier to
+						read.
+					</p>
+				</div>
+
+				<div className={`${styles.featureCard} ${styles.smallCard}`}>
+					<div className={styles.imagePlaceholder}>
+						{' '}
+						<Image
+							src='/icons/guide.gif'
+							alt='Components'
+							width={200}
+							height={200}
+							className={styles.transparent}
+						/>
+					</div>
+					<h3>Design Tokens</h3>
+					<p>
+						Abstracted values for spacing, font sizes, and colors for design system
+						consistency.
+					</p>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Features;

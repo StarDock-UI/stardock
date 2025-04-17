@@ -5,10 +5,10 @@ import { Heart } from 'lucide-react';
 
 const Footer = () => {
 	return (
-		<footer>
-			<div>
-				<h1>phoenix</h1>
-				<p>a css library that does just enough.</p>
+		<footer className='footer-container'>
+			<div className='footer-main'>
+				<h1>Phoenix</h1>
+				<p>A CSS library that does just enough.</p>
 				<p>
 					Made with <Heart /> by{' '}
 					<Link href='https://github.com/diyatripathi673'>@Diya</Link> -{' '}
@@ -17,15 +17,13 @@ const Footer = () => {
 					<Link href='https://github.com/nickkcode'>@Nikhil</Link>
 				</p>
 			</div>
-			<div>
-				<div>
+			<div className='footer-link'>
 					<Link href='/docs/getting-started'>Get-Started</Link>
 					<Link href='/docs/components'>Components</Link>
 					<Link href='/docs/styles'>Styles</Link>
 					<Link href='/docs/fonts'>Fonts</Link>
-				</div>
 			</div>
-			<div>
+			<div className='footer-copyright'>
 				<p>Copyright 2025 @</p>
 			</div>
 		</footer>

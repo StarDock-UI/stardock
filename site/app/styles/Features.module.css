@@ -1,0 +1,61 @@
+.featuresSection {
+	padding: 6rem 12rem;
+}
+
+.featuresTitle {
+	font-size: 2.5rem;
+	margin-bottom: 5rem;
+}
+
+.largeRow {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.smallRow {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 2rem;
+}
+
+.featureCard {
+	background-color: #1d1d1d;
+	border-radius: 1rem;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+	text-align: center;
+	padding: 2rem;
+	transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+	transform: translateY(-5px);
+}
+
+.imagePlaceholder {
+	width: 100%;
+	border-radius: 0.75rem;
+	margin-bottom: 1.5rem;
+}
+
+/* .largeCard {
+}
+
+.smallCard {
+} */
+
+.featureCard h3 {
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.featureCard p {
+	font-size: 1rem;
+	color: #858585;
+	line-height: 1.6;
+}
+
+.transparent {
+	mix-blend-mode: screen;
+}
