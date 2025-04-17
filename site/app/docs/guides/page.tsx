@@ -48,10 +48,10 @@ const GuidesPage = () => {
 
 				<div className='content-section'>
 					<h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-						<BookOpen size={20} /> StarDock Guides
+						<BookOpen size={20} /> phoenix Guides
 					</h2>
 					<p>
-						Learn how to unlock the full potential of StarDock with these step-by-step
+						Learn how to unlock the full potential of phoenix with these step-by-step
 						guides. Whether you're just getting started or looking to customize
 						components for production, we've got you covered.
 					</p>
@@ -61,7 +61,7 @@ const GuidesPage = () => {
 					</h2>
 					<ul>
 						<li>
-							<strong>Installation & Setup</strong> – How to install StarDock and
+							<strong>Installation & Setup</strong> – How to install phoenix and
 							include it in your project.
 							<br />
 							<code>npm install stylocss</code> & import in your app entry.
@@ -91,13 +91,13 @@ const GuidesPage = () => {
 							<strong>
 								<LayoutGrid size={16} style={{ marginRight: 6 }} /> Responsive Layouts
 							</strong>{' '}
-							– Create flexible grid systems using StarDock layout utilities.
+							– Create flexible grid systems using phoenix layout utilities.
 						</li>
 						<li>
 							<strong>
 								<Code size={16} style={{ marginRight: 6 }} /> Framework Integration
 							</strong>{' '}
-							– Use StarDock with React, Vue, or plain HTML/JS setups.
+							– Use phoenix with React, Vue, or plain HTML/JS setups.
 						</li>
 					</ul>
 
@@ -106,7 +106,7 @@ const GuidesPage = () => {
 					</h2>
 					<p>
 						Want to try components live? Check out the{' '}
-						<Link href='/docs/components/buttons'>Buttons page</Link> and start
+						<Link href='/docs/components'>Buttons page</Link> and start
 						experimenting.
 					</p>
 
@@ -115,8 +115,7 @@ const GuidesPage = () => {
 					</h2>
 					<p>
 						Found a bug or have a feature request? Reach out via{' '}
-						<a href='https://github.com/your-repo/your-project'>GitHub</a> or join the{' '}
-						<Link href='/community'>Community Chat</Link>.
+						<a href='https://github.com/StarDock-UI/stardock'>GitHub</a> 
 					</p>
 
 					{/* Navigation */}

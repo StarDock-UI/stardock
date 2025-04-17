@@ -1,6 +1,6 @@
 .header {
 	height: 50px;
-	padding: 1rem 12rem;
+	padding: 2rem 12rem;
 	z-index: 1000;
 	position: relative;
 }
@@ -9,8 +9,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* overflow: hidden; */
-	flex-wrap: nowrap;
 	gap: 1.5rem;
 }
 
@@ -27,8 +25,9 @@
 
 .navLink {
 	text-decoration: none;
-	color: white;
+	color: #858585;
 	white-space: nowrap;
+	font-size: 1.25rem;
 	transition: color 0.3s ease;
 }
 
@@ -79,18 +78,3 @@
 	pointer-events: none;
 	user-select: none;
 }
-
-/* Theme toggle button
-.iconToggle {
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	padding: 0.5rem;
-	border-radius: 50%;
-}
-
-.toggleIcon {
-	color: #9f7aea;
-	width: 20px;
-	height: 20px;
-} */

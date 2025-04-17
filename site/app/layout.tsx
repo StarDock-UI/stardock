@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-	title: 'StarDock UI Library',
+	title: 'phoenix UI Library',
 	description:
 		'A beautiful, flexible UI component library built for modern web apps.',
 };

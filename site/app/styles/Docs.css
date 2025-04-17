@@ -10,14 +10,18 @@
 	margin-top: 40px;
 	padding: 0 1rem;
 	width: 100%;
+  }
+  
+ 
+  .Doc-button {
 }
 
 /* Base link style */
 .Doc-button {
 	display: inline-flex;
-	align-items: center; /* Vertically aligns the text and icon */
-	justify-content: center; /* Horizontally aligns the content */
-	gap: 6px; /* Adds space between the icon and the text */
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
 	color: #a678e2;
 	font-weight: 600;
 	text-decoration: none;
@@ -55,19 +59,19 @@
 .right-button {
 	float: right;
 	text-align: right;
-}
-
-/* Main layout */
-.docs-container {
+  }
+  
+  /* Main layout */
+  .docs-container {
 	display: flex;
 	margin-left: 250px;
 	flex-direction: column;
 	padding: 2rem;
 	min-height: 100vh;
-}
-
-/* Sidebar styles */
-/*
+  }
+  
+  /* Sidebar styles */
+  /*
   .sidebar {
 	width: 220px;
 	background-color: #f3f3f3;
@@ -75,16 +79,16 @@
 	border-right: 1px solid #ddd;
   }
   */
-
-/* Content styles */
-.main-content {
+  
+  /* Content styles */
+  .main-content {
 	flex: 1;
 	padding: 2rem;
 	/* background-color: #fff; */
-}
-
-/* Header / Section styling */
-.content-section {
+  }
+  
+  /* Header / Section styling */
+  .content-section {
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -136,6 +140,6 @@ code {
 	display: flex;
 	align-items: start;
 	height: fit-content;
-	margin-top: 2rem;
-}
-
+	margin-top: 4rem;
+  }
+  

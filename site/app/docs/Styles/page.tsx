@@ -21,22 +21,21 @@ import {
 const StylesPage = () => {
     const router = useRouter();
 	useEffect(() => {
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'ArrowLeft') {
-                router.push('/docs/components');
-              } else if (e.key === 'ArrowRight') {
-                  router.push('/docs/fonts');
-                }
-              };
-              
-              
-              window.addEventListener('keydown', handleKeyDown);
-              return () => {
-                  window.removeEventListener('keydown', handleKeyDown);
-                };
-              }, [router]);
-              return (
-                  <div className='docs-container'>
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'ArrowLeft') {
+				router.push('/docs/components');
+			} else if (e.key === 'ArrowRight') {
+				router.push('/docs/configuration');
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [router]);
+	return (
+		<div className='docs-container'>
 			<Sidebar />
 			<div className='main-content'>
 				<DocsHeader />
@@ -46,7 +45,7 @@ const StylesPage = () => {
 						<Palette size={20} /> Styling Your Components
 					</h2>
 					<p>
-						This guide will walk you through customizing StarDock's UI components to
+						This guide will walk you through customizing phoenix's UI components to
 						match your application’s branding.
 
 					</p>
@@ -393,7 +392,7 @@ const StylesPage = () => {
 						<code>styles</code> folder and import it in your app entry point.
 					</p>
 
-					{/* Navigation Buttons */}
+					
 					<div
 						className='navigation-buttons'
 						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}

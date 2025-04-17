@@ -1,0 +1,367 @@
+@use './variables';
+
+// Spacing
+
+@each $key, $value in $spacing-scale {
+	// Margins
+	.m-#{$key} {
+		margin: $value;
+	}
+	.mt-#{$key} {
+		margin-top: $value;
+	}
+	.ml-#{$key} {
+		margin-left: $value;
+	}
+	.mr-#{$key} {
+		margin-right: $value;
+	}
+	.mb-#{$key} {
+		margin-bottom: $value;
+	}
+	.mx-#{$key} {
+		margin-left: $value;
+		margin-right: $value;
+	}
+	.my-#{$key} {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+
+	// Padding
+	.p-#{$key} {
+		padding: $value;
+	}
+	.pt-#{$key} {
+		padding-top: $value;
+	}
+	.pl-#{$key} {
+		padding-left: $value;
+	}
+	.pr-#{$key} {
+		padding-right: $value;
+	}
+	.pb-#{$key} {
+		padding-bottom: $value;
+	}
+	.px-#{$key} {
+		padding-left: $value;
+		padding-right: $value;
+	}
+	.py-#{$key} {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+
+	// Gap
+	.gap-#{key} {
+		gap: $value;
+	}
+
+	// Sizing
+	.w-#{$key} {
+		width: $value;
+	}
+	.h-#{$key} {
+		height: $value;
+	}
+
+	// Positioning
+	.top-#{$key} {
+		top: $value;
+	}
+	.left-#{$key} {
+		left: $value;
+	}
+	.right-#{$key} {
+		right: $value;
+	}
+	.bottom-#{$key} {
+		bottom: $value;
+	}
+}
+
+// Display & Visibility
+
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.inline-block {
+	display: inline-block;
+}
+.flex {
+	display: flex;
+}
+.inline-flex {
+	display: inline-flex;
+}
+.grid {
+	display: grid;
+}
+.hidden {
+	display: none;
+}
+
+
+// Flexbox
+
+.flex-row {
+	flex-direction: row;
+}
+.flex-col {
+	flex-direction: column;
+}
+
+.items-start {
+	align-items: flex-start;
+}
+.items-center {
+	align-items: center;
+}
+.items-end {
+	align-items: flex-end;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+// Sizing
+
+.w-full {
+	width: 100%;
+}
+.w-screen {
+	width: 100vw;
+}
+
+.h-full {
+	height: 100%;
+}
+.h-screen {
+	height: 100vh;
+}
+
+// Positioning
+
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.fixed {
+	position: fixed;
+}
+.sticky {
+	position: sticky;
+}
+
+.top-0 {
+	top: 0;
+}
+.left-0 {
+	left: 0;
+}
+.right-0 {
+	right: 0;
+}
+.bottom-0 {
+	bottom: 0;
+}
+
+// Typography
+
+@each $name, $size in $text-scale {
+	.text-#{$name} {
+		font-size: $size;
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+.font-semibold {
+	font-weight: 600;
+}
+.font-normal {
+	font-weight: normal;
+}
+.font-light {
+	font-weight: 300;
+}
+
+@each $key, $value in $colors {
+	.text-#{$key} {
+		color: $value;
+	}
+}
+
+// Backgrounds
+
+.bg-transparent {
+	background-color: #00000000;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-black {
+	background-color: #000;
+}
+
+.bg-glass {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+}
+
+@each $key, $value in $colors {
+	.bg-#{$key} {
+		background-color: $value;
+	}
+}
+
+// Borders
+
+.border {
+	border: 1px solid #000;
+}
+
+.border-0 {
+	border: none;
+}
+
+@each $name, $value in $radius-scale {
+	.rounded-#{$name} {
+		border-radius: $value;
+	}
+}
+
+@each $key, $value in $colors {
+	.border-#{$key} {
+		border-color: $value;
+	}
+}
+
+// Effects
+
+.opacity-0 {
+	opacity: 0;
+}
+.opacity-25 {
+	opacity: 0.25;
+}
+.opacity-50 {
+	opacity: 0.5;
+}
+.opacity-75 {
+	opacity: 0.75;
+}
+.opacity-100 {
+	opacity: 1;
+}
+
+@each $key, $value in $blur-scale {
+	.blur-#{$key} {
+		filter: blur($value);
+	}
+}
+
+// Z-Index
+
+.z-0 {
+	z-index: 0;
+}
+.z-10 {
+	z-index: 10;
+}
+.z-20 {
+	z-index: 20;
+}
+.z-30 {
+	z-index: 30;
+}
+.z-40 {
+	z-index: 40;
+}
+.z-50 {
+	z-index: 50;
+}
+
+// Overflow
+
+.overflow-hidden {
+	overflow: hidden;
+}
+.overflow-auto {
+	overflow: auto;
+}
+.overflow-scroll {
+	overflow: scroll;
+}
+
+// Cursor
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-default {
+	cursor: default;
+}
+
+.cursor-disable {
+	cursor: not-allowed;
+}
+
+// Transitions
+
+.transition {
+	transition: all 0.3s ease;
+}
+
+.transition-colors {
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+@each $name, $duration in $transition-duration {
+	.transition-#{$name} {
+		transition-duration: $duration;
+	}
+}
+
+.ease-in {
+	transition-timing-function: ease-in;
+}
+.ease-out {
+	transition-timing-function: ease-out;
+}

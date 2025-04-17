@@ -29,17 +29,17 @@ const Header = () => {
 			<div className='container'>
 				<div className='left'>
 					<Link href='/' className='logo'>
-						<h1>phoenix</h1>
+						<h1>PhoenixUI</h1>
 					</Link>
 				</div>
 				<nav className='nav'>
 					<Link href='/docs' className='navLink'>
 						Docs
 					</Link>
-					<Link href='/components' className='navLink'>
+					<Link href='/docs/components' className='navLink'>
 						Components
 					</Link>
-					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
+					<Link href='https://github.com/phoenix-UI/phoenix' className='navLink'>
 						Github
 					</Link>
 				</nav>

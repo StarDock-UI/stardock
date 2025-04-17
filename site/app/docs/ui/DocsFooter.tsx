@@ -8,7 +8,7 @@ const DocsFooter = () => {
 			<div className='container'>
 				<div className='left'>
 					<div className='headline'>
-						<h1>StarDock</h1>
+						<h1>phoenix</h1>
 						<p>A CSS library with beauty.</p>
 					</div>
 					<div className='contributers'>
@@ -25,10 +25,10 @@ const DocsFooter = () => {
 					</div>
 					<div className='links'>
 						<h1>Resources</h1>
-						<Link href='https://github.com/StarDock-UI/stardock.git'>Github</Link>
+						<Link href='https://github.com/phoenix-UI/phoenix.git'>Github</Link>
 						<div className='links'>
 						<h1>Contact</h1>
-						<a href='mailto:contact@stardock-ui.dev'>contact@stardock-ui.dev</a>
+						<a href='mailto:contact@phoenix-ui.dev'>contact@phoenix-ui.dev</a>
 					</div>
 					</div>
 					
