@@ -106,7 +106,7 @@ const GuidesPage = () => {
 					</h2>
 					<p>
 						Want to try components live? Check out the{' '}
-						<Link href='/docs/components/buttons'>Buttons page</Link> and start
+						<Link href='/docs/components'>Buttons page</Link> and start
 						experimenting.
 					</p>
 
@@ -115,8 +115,7 @@ const GuidesPage = () => {
 					</h2>
 					<p>
 						Found a bug or have a feature request? Reach out via{' '}
-						<a href='https://github.com/your-repo/your-project'>GitHub</a> or join the{' '}
-						<Link href='/community'>Community Chat</Link>.
+						<a href='https://github.com/StarDock-UI/stardock'>GitHub</a> 
 					</p>
 
 					{/* Navigation */}
