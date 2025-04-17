@@ -29,7 +29,7 @@ const Header = () => {
 			<div className='container'>
 				<div className='left'>
 					<Link href='/' className='logo'>
-						<h1>phoenix</h1>
+						<h1>PhoenixUI</h1>
 					</Link>
 				</div>
 				<nav className='nav'>
