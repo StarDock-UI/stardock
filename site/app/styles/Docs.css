@@ -130,4 +130,14 @@
 	border-radius: 4px;
 	font-family: monospace;
   }
+
+
+
+  .container {
+	width: 100%;
+	display: flex;
+	align-items: start;
+	height: fit-content;
+	margin-top: 4rem;
+  }
   
