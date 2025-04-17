@@ -24,7 +24,7 @@ const StylesPage = () => {
 			if (e.key === 'ArrowLeft') {
 				router.push('/docs/components');
 			} else if (e.key === 'ArrowRight') {
-				router.push('/docs/configuration');
+				router.push('/docs/colors');
 			}
 		};
 
@@ -402,9 +402,9 @@ const StylesPage = () => {
 								<ChevronLeft /> Components
 							</span>
 						</Link>
-						<Link href='/docs/fonts'>
+						<Link href='/docs/colors'>
 							<span className='Doc-button right-button'>
-								Fonts <ChevronRight />
+								Colors <ChevronRight />
 							</span>
 						</Link>
             </div>
