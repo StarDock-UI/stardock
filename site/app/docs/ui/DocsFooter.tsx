@@ -20,16 +20,18 @@ const DocsFooter = () => {
 						<h1>Learn</h1>
 						<Link href='/docs/getting-started'>Getting Started</Link>
 						<Link href='/docs/components'>Components</Link>
-						<Link href='/docs/classes'>Classes</Link>
-						<Link href='/docs/layout'>Layout</Link>
+						<Link href='/docs/styles'>Styles</Link>
+						<Link href='/docs/fonts'>Fonts</Link>
 					</div>
 					<div className='links'>
 						<h1>Resources</h1>
 						<Link href='https://github.com/StarDock-UI/stardock.git'>Github</Link>
-						<Link href='/docs/changelogs'>Changelogs</Link>
-						<Link href='/docs/support'>Support</Link>
-						<Link href='/docs/showcase'>Showcase</Link>
+						<div className='links'>
+						<h1>Contact</h1>
+						<a href='mailto:contact@stardock-ui.dev'>contact@stardock-ui.dev</a>
 					</div>
+					</div>
+					
 				</div>
 			</div>
 		</footer>

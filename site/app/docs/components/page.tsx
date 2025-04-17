@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -18,10 +19,26 @@ import {
 } from 'lucide-react';
 
 const ComponentsPage = () => {
+	const router = useRouter();
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'ArrowLeft') {
+				router.push('/docs/guides');
+			} else if (e.key === 'ArrowRight') {
+				router.push('/docs/styles');
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [router]);
+
 	return (
 		<div className='docs-container'>
 			<Sidebar />
-
 			<div className='main-content'>
 				<DocsHeader />
 				<Blob size='500px' top='20px' opacity={0.1} />
@@ -160,7 +177,7 @@ const ComponentsPage = () => {
 								<ChevronLeft /> Guides
 							</span>
 						</Link>
-						<Link href='/docs/api-references'>
+						<Link href='/docs/styles'>
 							<span className='Doc-button right-button'>
 								Styles <ChevronRight />
 							</span>

@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -18,6 +19,23 @@ import '@/app/styles/Docs.css';
 import '@/app/docs/css/home.css';
 
 const GettingStarted = () => {
+	const router = useRouter();
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'ArrowRight') {
+				router.push('/docs/guides');
+			} else if (e.key === 'ArrowLeft') {
+				router.push('/docs');
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => {
+			window.removeEventListener('keydown', handleKeyDown);
+		};
+	}, [router]);
+
 	return (
 		<div className='docs-container'>
 			<Sidebar />
@@ -27,10 +45,10 @@ const GettingStarted = () => {
 				<Blob size='500px' top='20px' opacity={0.1} />
 
 				<div className='content-section'>
-					<h2>
+					<h1>
 						<Rocket size={20} style={{ marginRight: '8px' }} /> Getting Started with
 						StarDock
-					</h2>
+					</h1>
 					<p>
 						Let's get your UI components up and running in just a few steps. StarDock
 						is built for speed, customization, and developer happiness.
@@ -40,9 +58,9 @@ const GettingStarted = () => {
 						<Package size={20} style={{ marginRight: '8px' }} /> Installation
 					</h2>
 					<p>To start using StarDock, install the package via npm or yarn:</p>
-					<code>npm install stylocss</code>
+					<pre><code>npm install stylocss</code></pre>
 					<p>or</p>
-					<code>yarn add stylocss</code>
+					<pre><code>yarn add stylocss</code></pre>
 
 					<h2>
 						<Dna size={20} style={{ marginRight: '8px' }} /> Importing Styles
@@ -51,28 +69,22 @@ const GettingStarted = () => {
 						Include the base styles in your main app entry file (e.g.{' '}
 						<code>layout.tsx</code> or <code>_app.tsx</code>):
 					</p>
-					<code>{`import 'stylocss/styles.css';`}</code>
+					<pre><code>{`import 'stylocss/styles.css';`}</code></pre>
 
 					<h2>
 						<Hammer size={20} style={{ marginRight: '8px' }} /> Usage Example
 					</h2>
 					<p>Now start building! Here's an example using the Button component:</p>
-					<code>{`<Button variant="primary">Click Me</Button>`}</code>
+					<pre><code>{`<Button variant="primary">Click Me</Button>`}</code></pre>
 
 					<h2>
 						<Folder size={20} style={{ marginRight: '8px' }} /> File Structure
 					</h2>
 					<p>When using StarDock with a framework like Next.js or React:</p>
 					<ul>
-						<li>
-							<code>components/</code> – Your reusable components
-						</li>
-						<li>
-							<code>styles/</code> – Custom themes and overrides
-						</li>
-						<li>
-							<code>pages/</code> or <code>app/</code> – Your routes
-						</li>
+						<li><code>components/</code> – Your reusable components</li>
+						<li><code>styles/</code> – Custom themes and overrides</li>
+						<li><code>pages/</code> or <code>app/</code> – Your routes</li>
 					</ul>
 
 					<h2>

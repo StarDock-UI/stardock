@@ -1,5 +1,7 @@
 'use client';
-import React from 'react';
+
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Sidebar from '../ui/Sidebar';
 import DocsHeader from '../ui/DocsHeader';
 import Blob from '../../ui/Blob';
@@ -12,9 +14,27 @@ import {
   Type,
   TextCursorInput, // ✅ Replaced the invalid 'Font' icon
   Globe,
+  ChevronLeft,
 } from 'lucide-react';
 
 const FontsPage = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        router.push('/docs/styles');  // Navigate to the 'styles' page on left arrow
+      } else if (e.key === 'ArrowRight') {
+        router.push('/docs/configuration');  // Navigate to the 'configuration' page on right arrow
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [router]);
+
   return (
     <div className="docs-container">
       <Sidebar />
@@ -23,12 +43,6 @@ const FontsPage = () => {
         <Blob size="500px" top="20px" opacity={0.1} />
 
         <div className="content-section">
-          {/* Breadcrumb */}
-          <div className="breadcrumb">
-            <ChevronRight />
-            <span>Fonts</span>
-          </div>
-
           <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Text size={20} /> Managing Fonts in Your App
           </h2>
@@ -83,10 +97,10 @@ body {
           {/* Navigation Buttons */}
           <div className="navigation-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
             <Link href="/docs/styles">
-              <span className="Doc-button left-button">← Styles</span>
+              <span className="Doc-button left-button"> <ChevronLeft/>Styles</span>
             </Link>
             <Link href="/docs/configuration">
-              <span className="Doc-button right-button">Configuration →</span>
+              <span className="Doc-button right-button">Configuration <ChevronRight/></span>
             </Link>
           </div>
         </div>
