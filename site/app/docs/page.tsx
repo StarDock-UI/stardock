@@ -4,8 +4,8 @@ import Sidebar from './ui/Sidebar';
 import DocsHeader from './ui/DocsHeader';
 import Blob from '../ui/Blob';
 import Link from 'next/link';
-import styles from '@/app/styles/Docs.module.css';
-
+import "../styles/Docs.css";
+import "../docs/css/home.css"; // global styles onl
 import {
 	Rocket,
 	Paintbrush,
@@ -33,14 +33,14 @@ const Docs = () => {
 	}, []);
 
 	return (
-		<div className={styles.docsContainer}>
+		<div className="docsContainer">
 			<Sidebar />
-			<div className={styles.mainContent}>
+			<div className="mainContent">
 				<DocsHeader />
 				<Blob size='500px' top='20px' opacity={0.1} />
 
-				<div className={styles.contentSection}>
-					<h2>Welcome to Star Dock</h2>
+				<div className="contentSection">
+					<h2>Welcome to phoenix</h2>
 					<p>
 						<strong>phoenix</strong> is a modern and lightweight UI component library
 						that helps you build beautiful web interfaces faster. Inspired by the best
