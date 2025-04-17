@@ -20,8 +20,7 @@ const Button: React.FC<ButtonProps> = ({
 	onClick,
 	className,
 }) => {
-	const baseStyles =
-		'font-medium rounded-lg transition-colors duration-200 focus:outline-none';
+	const baseStyles = 'rounded-lg transition-colors transition-medium cursor-pointer m-2';
 
 	const sizeStyles = {
 		small: 'px-3 py-1 text-sm',
@@ -30,14 +29,14 @@ const Button: React.FC<ButtonProps> = ({
 	};
 
 	const variantStyles = {
-		primary: 'bg-blue-600 text-white hover:bg-blue-700',
-		secondary: 'bg-gray-600 text-white hover:bg-gray-700',
-		outline: 'border border-gray-400 text-gray-800 hover:bg-gray-100',
-		ghost: 'text-gray-800 hover:bg-gray-100',
-		link: 'text-blue-600 underline hover:text-blue-800',
+		primary: 'bg-grapeink text-snowlight hover:bg-violettease',
+		secondary: 'bg-slateveil text-snowlight hover:bg-duskshade',
+		outline: ' bg-firebud   border border-ghostveil text-duskshade hover:bg-ashcloud',
+		ghost: '   bg-forestink text-snowlight hover:bg-ashcloud',
+		link: ' bg-azurebreeze text-snowlight underline hover:text-deepwave',
 	};
 
-	const disabledStyles = 'opacity-50 cursor-not-allowed';
+	const disabledStyles = 'opacity-50 cursor-disable';
 
 	return (
 		<button
@@ -52,7 +51,7 @@ const Button: React.FC<ButtonProps> = ({
 			)}
 		>
 			{loading ? (
-				<span className='animate-spin border-2 border-t-transparent border-white rounded-full w-4 h-4 mr-2' />
+				<span className="inline-block animate-spin border border-t-transparent border-white rounded-full w-4 h-4 mr-2" />
 			) : null}
 			{label}
 		</button>
