@@ -127,12 +127,20 @@
 
 
   .container {
+
 	width: 100%;
 	display: flex;
 	align-items: start;
-	height: fit-content;
+	height: fit-content; 
 	margin-top: 4rem;
   }
+  .container div-class{
+    height: 370px;
+    width: 335px;
+    margin: 60px;
+    text-align: center;
+  }
+
   .color-table {
 	width: 100%;
 	border-collapse: collapse;
