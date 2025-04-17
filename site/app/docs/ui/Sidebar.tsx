@@ -36,7 +36,7 @@ const Sidebar = () => {
 		<div className='sidebar'>
 			<div className='sidebar-header'>
 				<Link className='sidebar-logo' href='/'>
-					<span className='sidebar-title'>StarDock</span>
+					<span className='sidebar-title'>phoenix</span>
 				</Link>
 			</div>
 
