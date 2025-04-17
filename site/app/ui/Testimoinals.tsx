@@ -45,7 +45,6 @@ const Testimonials = () => {
   return (
     <section className="testimonials-section">
       <div className="testimonials-header">
-        <p className="tag">✨ Testimonials</p>
         <h1>Public Cheers for Us!</h1>
         <p className="subtitle">Find out how our users are spreading the word!</p>
       </div>

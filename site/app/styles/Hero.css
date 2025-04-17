@@ -1,17 +1,28 @@
 .hero-section {
-	height: 100vh;
-	position: relative;
+	height: 85vh;
+	padding-left: 12rem;
+	padding-right: 12rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.left {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	text-align: center;
+}
+
+.right {
+	position: relative;
+	height: 85vh;
+	display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .hero-title {
 	font-size: 3.5rem;
-	margin-bottom: 10px;
-	/* font-family: 'CabinetGrotesk-Bold', sans-serif; */
+	margin-bottom: 1rem;
 }
 
 .highlight {
@@ -20,7 +31,7 @@
 
 .hero-subtitle {
 	font-size: 1.5rem;
-	margin-bottom: 10px;
+	margin-bottom: 2rem;
 }
 
 .hero-buttons {
@@ -30,21 +41,24 @@
 }
 
 .btn {
-	padding: 12px 24px;
+	padding: 10px 20px;
 	border: none;
-	border-radius: 8px;
+	border-radius: 18px;
 	cursor: pointer;
 	transition: all 0.3s ease;
-	width: fit-content;
-	min-width: 160px;
-    text-decoration: none;
-    color: #ffffff;
+	width: 160px;
+	text-decoration: none;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
 }
 
 .btn:hover {
-    background-color: #190042;
-    color: #ffffff;
-    text-decoration: none;
+	background-color: #190042;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .btn-primary {
@@ -53,7 +67,7 @@
 
 .btn-secondary {
 	border: 2px solid #7f52c7;
-    background-color: transparent;
+	background-color: transparent;
 }
 
 .copy-wrapper {
@@ -78,7 +92,7 @@
 .copy-svg {
 	position: absolute;
 	right: -16rem;
-    top: 20%;
+	top: 20%;
 }
 
 .badge {
@@ -86,7 +100,13 @@
 	padding: 5px 30px;
 	border-radius: 20px;
 	font-size: 0.8rem;
-	margin-left: 10px;
 	position: absolute;
-	top: 150px;
+	top: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.star {
+	scale: 0.6;
 }

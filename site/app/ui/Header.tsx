@@ -1,9 +1,8 @@
 'use client';
-import Link from 'next/link'; 
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { Search, Sun, Moon, GithubIcon } from 'lucide-react';
 import '../styles/Header.css';
-import Logo from './Logo';
 
 const Header = () => {
 	const [darkMode, setDarkMode] = useState(false);
@@ -30,11 +29,8 @@ const Header = () => {
 			<div className='container'>
 				<div className='left'>
 					<Link href='/' className='logo'>
-						<Logo />
-						<h1>StarDock</h1>
+						<h1>phoenix</h1>
 					</Link>
-
-
 				</div>
 				<nav className='nav'>
 					<Link href='/docs' className='navLink'>
@@ -48,18 +44,17 @@ const Header = () => {
 					</Link>
 				</nav>
 
-				<div className='searchBox'>
+				<div className='searchBar'>
+					<Search className='searchIcon' />
 					<input
 						ref={searchRef}
 						type='text'
-						placeholder='CTRL + K to search'
+						placeholder='Search...'
 						aria-label='Search'
 						className='searchInput'
 					/>
-					<Search className='searchIcon' />
+					<span className='keybind'>Ctrl + K</span>
 				</div>
-
-
 
 				{/* <button
 					onClick={() => setDarkMode(!darkMode)}
@@ -72,7 +67,6 @@ const Header = () => {
 						<Moon className='toggleIcon' />
 					)}
 				</button> */}
-
 			</div>
 		</header>
 	);
