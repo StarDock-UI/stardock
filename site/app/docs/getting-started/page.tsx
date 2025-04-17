@@ -93,13 +93,13 @@ const GettingStarted = () => {
 					<p>Ready to dive deeper?</p>
 					<ul>
 						<li>
-							<Link href='/docs/components/buttons'>Explore Button Variants</Link>
+							<Link href='/docs/components'>Explore Button Variants</Link>
 						</li>
 						<li>
-							<Link href='/docs/components/forms'>Build Form UI</Link>
+							<Link href='/docs/components'>Build Navbars</Link>
 						</li>
 						<li>
-							<Link href='/docs/components/layouts'>Create Responsive Layouts</Link>
+							<Link href='/docs/components'>Create Responsive Layouts</Link>
 						</li>
 					</ul>
 
