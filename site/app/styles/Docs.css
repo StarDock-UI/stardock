@@ -140,3 +140,22 @@
 	height: fit-content;
 	margin-top: 4rem;
   }
+  .color-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 2rem;
+  }
+  
+  .color-table th,
+  .color-table td {
+	padding: 0.75rem 1rem;
+	border: 1px solid #ddd;
+	text-align: left;
+  }
+  
+  .color-table th {
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  
