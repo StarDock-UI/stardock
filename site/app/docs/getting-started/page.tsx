@@ -47,17 +47,17 @@ const GettingStarted = () => {
 				<div className='content-section'>
 					<h1>
 						<Rocket size={20} style={{ marginRight: '8px' }} /> Getting Started with
-						StarDock
+						phoenix
 					</h1>
 					<p>
-						Let's get your UI components up and running in just a few steps. StarDock
+						Let's get your UI components up and running in just a few steps. phoenix
 						is built for speed, customization, and developer happiness.
 					</p>
 
 					<h2>
 						<Package size={20} style={{ marginRight: '8px' }} /> Installation
 					</h2>
-					<p>To start using StarDock, install the package via npm or yarn:</p>
+					<p>To start using phoenix, install the package via npm or yarn:</p>
 					<pre><code>npm install stylocss</code></pre>
 					<p>or</p>
 					<pre><code>yarn add stylocss</code></pre>
@@ -80,7 +80,7 @@ const GettingStarted = () => {
 					<h2>
 						<Folder size={20} style={{ marginRight: '8px' }} /> File Structure
 					</h2>
-					<p>When using StarDock with a framework like Next.js or React:</p>
+					<p>When using phoenix with a framework like Next.js or React:</p>
 					<ul>
 						<li><code>components/</code> – Your reusable components</li>
 						<li><code>styles/</code> – Custom themes and overrides</li>

@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const Hero = () => {
 	const handleCopy = () => {
-		const textToCopy = 'npm i stardock@latest';
+		const textToCopy = 'npm i phoenix@latest';
 		navigator.clipboard.writeText(textToCopy);
 	};
 
@@ -43,7 +43,7 @@ const Hero = () => {
 
 				<div className='copy-wrapper'>
 					<code className='copy-block' id='code-block' onClick={handleCopy}>
-						npm i stardock@latest
+						npm i phoenix@latest
 					</code>
 					<Copy />
 				</div>

@@ -42,16 +42,16 @@ const Docs = () => {
 				<Blob size='500px' top='20px' opacity={0.1} />
 
 				<div className='content-section'>
-					<h2>Welcome to Star Dock</h2>
+					<h2>Welcome to phoenix</h2>
 					<p>
-						<strong>StarDock</strong> is a modern and lightweight UI component library
+						<strong>phoenix</strong> is a modern and lightweight UI component library
 						that helps you build beautiful web interfaces faster. Inspired by the best
 						of Tailwind and Bootstrap, but built for developers who want flexibility
 						without the bloat.
 					</p>
 
 					<h2>
-						<Paintbrush size={20} /> Why StarDock?
+						<Paintbrush size={20} /> Why phoenix?
 					</h2>
 					<ul>
 						<li>
