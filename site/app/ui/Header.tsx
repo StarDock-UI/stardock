@@ -1,16 +1,11 @@
 'use client';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { Search, Sun, Moon, GithubIcon } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Search } from 'lucide-react';
 import '../styles/Header.css';
 
 const Header = () => {
-	const [darkMode, setDarkMode] = useState(false);
 	const searchRef = React.useRef<HTMLInputElement>(null);
-
-	useEffect(() => {
-		document.body.className = darkMode ? 'dark' : 'light';
-	}, [darkMode]);
 
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {

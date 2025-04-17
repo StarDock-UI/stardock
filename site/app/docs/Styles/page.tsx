@@ -11,7 +11,6 @@ import '@/app/styles/Docs.css';
 import {
 	ChevronRight,
 	Palette,
-	Settings,
 	Brush,
 	Code2,
 	Globe,
@@ -47,7 +46,7 @@ const StylesPage = () => {
 						<Palette size={20} /> Styling Your Components
 					</h2>
 					<p>
-						This guide will walk you through customizing phoenix's UI components to
+						This guide will walk you through customizing phoenix&apos;s UI components to
 						match your application’s branding.
 					</p>
 
