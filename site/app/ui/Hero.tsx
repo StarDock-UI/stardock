@@ -49,7 +49,9 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className='right'>
-				<Image src='/code.png' alt='code' width={600} height={300} />
+				<div className='code-block'>
+					<Image src='/code.png' alt='code' width={600} height={300} />
+				</div>
 			</div>
 		</section>
 	);
