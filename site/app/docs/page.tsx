@@ -5,7 +5,6 @@ import DocsHeader from './ui/DocsHeader';
 import Blob from '../ui/Blob';
 import Link from 'next/link';
 import styles from '@/app/styles/Docs.module.css';
-import homeStyles from '@/app/docs/css/home.module.css'; // if this is also converted to module
 
 import {
 	Rocket,
@@ -76,7 +75,7 @@ const Docs = () => {
 							Install via npm: <code>npm install stylocss</code>
 						</li>
 						<li>
-							Import core styles: <code>import 'stylocss/styles.css'</code>
+							Import core styles: <code>import &apos;stylocss/styles.css&apos;</code>
 						</li>
 						<li>
 							Start using components:{' '}
@@ -110,7 +109,7 @@ const Docs = () => {
 						<Puzzle size={20} /> Built With Flexibility
 					</h2>
 					<p>
-						Whether you're building a simple landing page or a full-scale web app,
+						Whether you&apos;re building a simple landing page or a full-scale web app,
 						StyloCSS adapts to your needs. Use it with React, Vue, or just plain
 						HTML/CSS.
 					</p>
