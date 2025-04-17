@@ -109,7 +109,7 @@ const Page = () => {
         </div>
 
         <div>
-          <h1>Styles</h1>
+          <h1>Colors</h1>
           {/* Original Colors */}
           <p style={{ backgroundColor: '#f9f9f9' }}>#f9f9f9</p>
           <p style={{ backgroundColor: '#f1f1f1' }}>#f1f1f1</p>
