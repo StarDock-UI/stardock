@@ -26,7 +26,7 @@ const StylesPage = () => {
       if (e.key === 'ArrowLeft') {
         router.push('/docs/components');
       } else if (e.key === 'ArrowRight') {
-        router.push('/docs/configuration');
+        router.push('/docs/colors');
       }
     };
 
