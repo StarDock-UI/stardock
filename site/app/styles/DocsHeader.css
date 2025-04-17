@@ -14,7 +14,7 @@
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* === Logo Section === */
+
 .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -24,7 +24,7 @@
 	gap: 0.5rem;
 }
 
-/* === Search Bar Section === */
+
 .searchBar {
 	display: flex;
 	align-items: center;
@@ -74,7 +74,7 @@
 	user-select: none;
 }
 
-/* === Theme Toggle Button === */
+
 .iconToggle {
 	background: none;
 	border: none;
@@ -105,7 +105,7 @@
 	box-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
 }
 
-/* === Responsive Adjustments === */
+
 @media (max-width: 768px) {
 	.docsHeader {
 		flex-direction: column;

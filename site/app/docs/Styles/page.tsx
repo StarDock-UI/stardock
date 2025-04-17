@@ -275,7 +275,7 @@ const StylesPage = () => {
 						<code>styles</code> folder and import it in your app entry point.
 					</p>
 
-					{/* Navigation Buttons */}
+					
 					<div
 						className='navigation-buttons'
 						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}

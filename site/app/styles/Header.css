@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* overflow: hidden; */
+
 	flex-wrap: nowrap;
 	gap: 1.5rem;
 }
@@ -80,17 +80,4 @@
 	user-select: none;
 }
 
-/* Theme toggle button
-.iconToggle {
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	padding: 0.5rem;
-	border-radius: 50%;
-}
 
-.toggleIcon {
-	color: #9f7aea;
-	width: 20px;
-	height: 20px;
-} */
