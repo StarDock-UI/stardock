@@ -54,7 +54,7 @@
 	}
 
 	// Gap
-	.gap-#{key} {
+	.gap-#{$key} {
 		gap: $value;
 	}
 
@@ -79,6 +79,37 @@
 	.bottom-#{$key} {
 		bottom: $value;
 	}
+
+	.min-w-#{$key} {
+		min-width: $value;
+	}
+	.max-w-#{$key} {
+		max-width: $value;
+	}
+	.min-h-#{$key} {
+		min-height: $value;
+	}
+	.max-h-#{$key} {
+		max-height: $value;
+	}
+	.border-#{$key} {
+		border-width: $value;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 // Display & Visibility
@@ -104,7 +135,6 @@
 .hidden {
 	display: none;
 }
-
 
 // Flexbox
 
@@ -273,7 +303,6 @@
 }
 
 // Effects
-
 .opacity-0 {
 	opacity: 0;
 }
