@@ -8,11 +8,8 @@ import {
 	Box,
 	Brush,
 	CheckCircle2,
-	Code,
 	Home,
 	Palette,
-	Settings,
-	Type,
 } from 'lucide-react';
 
 import '@/app/styles/Sidebar.css';
@@ -31,7 +28,6 @@ const Sidebar = () => {
 		{ href: '/docs/components', label: 'Components', icon: <Box /> },
 		{ href: '/docs/styles', label: 'Styles', icon: <Brush/> },
 		{ href: '/docs/colors', label: 'Colors', icon: <Palette /> }
-
 	];
 
 	return (

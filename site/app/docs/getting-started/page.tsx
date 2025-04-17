@@ -47,10 +47,10 @@ const GettingStarted = () => {
 				<div className='content-section'>
 					<h1>
 						<Rocket size={20} style={{ marginRight: '8px' }} /> Getting Started with
-						phoenix
+						PhoenixUI
 					</h1>
 					<p>
-						Let's get your UI components up and running in just a few steps. phoenix
+						Let&apos;s get your UI components up and running in just a few steps. phoenix
 						is built for speed, customization, and developer happiness.
 					</p>
 
@@ -74,7 +74,7 @@ const GettingStarted = () => {
 					<h2>
 						<Hammer size={20} style={{ marginRight: '8px' }} /> Usage Example
 					</h2>
-					<p>Now start building! Here's an example using the Button component:</p>
+					<p>Now start building! Here&apos;s an example using the Button component:</p>
 					<pre><code>{`<Button variant="primary">Click Me</Button>`}</code></pre>
 
 					<h2>

@@ -27,7 +27,7 @@ const Hero = () => {
 				<h1 className='hero-title'>
 					Everything you need.
 					<br />
-					<span className='highlight'>Nothing you don't.</span>
+					<span className='highlight'>Nothing you don&apos;t.</span>
 				</h1>
 
 				<p className='hero-subtitle'>
