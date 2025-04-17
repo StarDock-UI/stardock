@@ -2,18 +2,18 @@
 	padding: 20px;
 	margin-top: 20px;
 	margin-left: 250px;
-  }
-  
-  .navigation-buttons {
+}
+
+.navigation-buttons {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 40px;
 	padding: 0 1rem;
 	width: 100%;
-  }
-  
-  /* Base link style */
-  .Doc-button {
+}
+
+/* Base link style */
+.Doc-button {
 	display: inline-flex;
 	align-items: center; /* Vertically aligns the text and icon */
 	justify-content: center; /* Horizontally aligns the content */
@@ -26,14 +26,14 @@
 	font-size: 1rem;
 	padding: 6px 0;
 	cursor: pointer;
-  }
-  
-  .Doc-button:hover {
+}
+
+.Doc-button:hover {
 	transform: translateX(2px);
-  }
-  
-  .Doc-button::after {
-	content: "";
+}
+
+.Doc-button::after {
+	content: '';
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -41,33 +41,33 @@
 	height: 2px;
 	background-color: #a678e2;
 	transition: width 0.3s ease;
-  }
-  
-  .Doc-button:hover::after {
+}
+
+.Doc-button:hover::after {
 	width: 100%;
-  }
-  
-  .left-button {
+}
+
+.left-button {
 	float: left;
 	text-align: left;
-  }
-  
-  .right-button {
+}
+
+.right-button {
 	float: right;
 	text-align: right;
-  }
-  
-  /* Main layout */
-  .docs-container {
+}
+
+/* Main layout */
+.docs-container {
 	display: flex;
 	margin-left: 250px;
 	flex-direction: column;
 	padding: 2rem;
 	min-height: 100vh;
-  }
-  
-  /* Sidebar styles */
-  /*
+}
+
+/* Sidebar styles */
+/*
   .sidebar {
 	width: 220px;
 	background-color: #f3f3f3;
@@ -75,69 +75,67 @@
 	border-right: 1px solid #ddd;
   }
   */
-  
-  /* Content styles */
-  .main-content {
+
+/* Content styles */
+.main-content {
 	flex: 1;
 	padding: 2rem;
 	/* background-color: #fff; */
-  }
-  
-  /* Header / Section styling */
-  .content-section {
+}
+
+/* Header / Section styling */
+.content-section {
 	max-width: 800px;
 	margin: 0 auto;
-  }
-  
-  .breadcrumb {
+}
+
+.breadcrumb {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 	color: #666;
 	font-size: 14px;
 	margin-bottom: 1rem;
-  }
-  
-  h1 {
+}
+
+h1 {
 	font-size: 28px;
 	margin-bottom: 1rem;
-  }
-  
-  h2 {
+}
+
+h2 {
 	font-size: 22px;
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
-  }
-  
-  h3 {
+}
+
+h3 {
 	font-size: 18px;
 	margin-top: 1.5rem;
-  }
-  
-  p {
+}
+
+p {
 	margin-bottom: 1rem;
-  }
-  
-  ul,
-  ol {
+}
+
+ul,
+ol {
 	margin-left: 1.5rem;
 	margin-bottom: 1rem;
-  }
-  
-  code {
+}
+
+code {
 	background: #615f5f;
 	padding: 2px 6px;
 	border-radius: 4px;
 	font-family: monospace;
-  }
+}
 
-
-
-  .container {
+.container {
 	width: 100%;
 	display: flex;
 	align-items: start;
 	height: fit-content;
-	margin-top: 4rem;
-  }
-  
+	margin-top: 2rem;
+}
+

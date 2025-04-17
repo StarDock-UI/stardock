@@ -168,7 +168,7 @@ const ComponentsPage = () => {
 					</ul>
 
 					{/* Navigation Buttons */}
-					<div
+				<div
 						className='navigation-buttons'
 						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}
 					>
