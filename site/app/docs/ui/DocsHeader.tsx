@@ -24,25 +24,27 @@ const DocsHeader = () => {
 
 	return (
 		<div className='docsHeader'>
-			<div className='searchBar'>
-				<Search className='searchIcon' />
-				<input
-					ref={searchRef}
-					type='text'
-					placeholder='Search...'
-					aria-label='Search'
-					className='searchInput'
-				/>
-				<span className='keybind'>Ctrl + K</span>
-			</div>
+			<div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+				<div className='searchBar'>
+					<Search className='searchIcon' />
+					<input
+						ref={searchRef}
+						type='text'
+						placeholder='Search...'
+						aria-label='Search'
+						className='searchInput'
+					/>
+					<span className='keybind'>Ctrl + K</span>
+				</div>
 
-			<button
-				onClick={() => setDarkMode(!darkMode)}
-				className='iconToggle'
-				aria-label='Toggle Theme'
-			>
-				{darkMode ? <Sun className='toggleIcon' /> : <Moon className='toggleIcon' />}
-			</button>
+				<button
+					onClick={() => setDarkMode(!darkMode)}
+					className='iconToggle'
+					aria-label='Toggle Theme'
+				>
+					{darkMode ? <Sun className='toggleIcon' /> : <Moon className='toggleIcon' />}
+				</button>
+			</div>
 		</div>
 	);
 };

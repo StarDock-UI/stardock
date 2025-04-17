@@ -1,7 +1,7 @@
 .docsHeader {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	padding: 0 2rem;
 	position: fixed;
 	top: 0;
@@ -11,13 +11,24 @@
 	background-color: #0b0b0b;
 	color: white;
 	z-index: 1000;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.searchBar {
-	margin-left: 600px;
-	position: relative;
+/* === Logo Section === */
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--accent, #facc15);
 	display: flex;
 	align-items: center;
+	gap: 0.5rem;
+}
+
+/* === Search Bar Section === */
+.searchBar {
+	display: flex;
+	align-items: center;
+	position: relative;
 }
 
 .searchInput {
@@ -30,6 +41,12 @@
 	height: 32px;
 	background-color: #1e1e1e;
 	color: white;
+	transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.searchInput:focus {
+	box-shadow: 0 0 0 2px #facc15;
+	background-color: #2a2a2a;
 }
 
 .searchIcon {
@@ -57,13 +74,14 @@
 	user-select: none;
 }
 
+/* === Theme Toggle Button === */
 .iconToggle {
 	background: none;
 	border: none;
 	cursor: pointer;
 	padding: 0.5rem;
 	border-radius: 50%;
-	transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease, transform 0.1s ease;
 	margin-left: 1rem;
 }
 
@@ -80,4 +98,37 @@
 
 .iconToggle:hover {
 	background-color: rgba(99, 102, 241, 0.08);
+}
+
+.iconToggle:active {
+	transform: scale(0.95);
+	box-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+	.docsHeader {
+		flex-direction: column;
+		align-items: stretch;
+		height: auto;
+		padding: 1rem;
+		gap: 1rem;
+	}
+
+	.searchBar {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.searchInput {
+		width: 100%;
+	}
+
+	.keybind {
+		display: none;
+	}
+
+	.iconToggle {
+		align-self: flex-end;
+	}
 }
