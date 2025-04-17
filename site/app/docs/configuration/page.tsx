@@ -23,7 +23,7 @@ const ConfigurationPage = () => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') {
-        router.push('/docs');  // Navigate to the home page on left arrow
+        router.push('/docs');  
       }
     };
 
@@ -89,7 +89,7 @@ NEXT_PUBLIC_AUTH_KEY=your-auth-key`}
             </code>
           </pre>
 
-          {/* Navigation Buttons */}
+          
           <div className="navigation-buttons" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
             <Link href="/docs">
               <span className="Doc-button left-button"> <ChevronLeft/> Home</span>

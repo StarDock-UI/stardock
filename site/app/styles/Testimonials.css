@@ -48,7 +48,7 @@
     transition: transform 0.3s;
   }
   
-  /* Slight hover animation */
+ 
   .testimonial-card:hover {
     transform: translateY(-5px);
   }
@@ -92,7 +92,7 @@
     line-height: 1.5;
   }
   
-  /* Responsive: stack on mobile */
+ 
   @media screen and (max-width: 900px) {
     .testimonials-grid {
       grid-template-columns: repeat(2, 1fr);
