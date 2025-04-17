@@ -45,10 +45,10 @@ const GettingStarted = () => {
 				<Blob size='500px' top='20px' opacity={0.1} />
 
 				<div className='content-section'>
-					<h1>
+					<h2>
 						<Rocket size={20} style={{ marginRight: '8px' }} /> Getting Started with
 						PhoenixUI
-					</h1>
+					</h2>
 					<p>
 						Let&apos;s get your UI components up and running in just a few steps. phoenix
 						is built for speed, customization, and developer happiness.
