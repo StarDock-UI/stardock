@@ -29,7 +29,7 @@ const Sidebar = () => {
 		},
 		{ href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
 		{ href: '/docs/components', label: 'Components', icon: <Box /> },
-		{ href: '/docs/Styles', label: 'Styles', icon: <Palette /> },
+		{ href: '/docs/styles', label: 'styles', icon: <Brush/> },
 		{ href: '/docs/colors', label: 'Colors', icon: <Palette /> }
 
 	];
