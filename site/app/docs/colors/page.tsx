@@ -1,9 +1,23 @@
+'use client';
 import React from 'react';
+import Sidebar from '../ui/Sidebar';
+import DocsHeader from '../ui/DocsHeader';
+import Blob from '../../ui/Blob';
+import Link from 'next/link';
+import '@/app/styles/Docs.css';
+import '@/app/docs/css/home.css';
+
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Page = () => {
-  return (
-    <div>
-      <div className="container">
+	return (
+		<div className='docs-container'>
+			<Sidebar />
+			<div className='main-content'>
+				<DocsHeader />
+				<Blob size='500px' top='20px' opacity={0.1} />
+
+        <div className="container">
         <div>
           <h1>Class</h1>
           {/* Original Colors */}
@@ -184,8 +198,9 @@ const Page = () => {
           <p style={{ backgroundColor: '#ff3366' }}>#ff3366</p>
         </div>
       </div>
-    </div>
-  );
+			</div>
+		</div>
+	);
 };
 
 export default Page;

@@ -102,10 +102,10 @@ const StylesPage = () => {
 						<Link href='/docs/styles'>
 							<span className='Doc-button left-button'> <ChevronLeft/> Components</span>
 						</Link>
-						<Link href='/docs/fonts'>
+						<Link href='/docs/colors'>
 							
 							<span className='Doc-button right-button'>
-															Fonts <ChevronRight/>
+															Colors <ChevronRight/>
 														</span>
 						</Link>
 					</div>
