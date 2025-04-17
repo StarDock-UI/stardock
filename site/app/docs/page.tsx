@@ -4,8 +4,8 @@ import Sidebar from './ui/Sidebar';
 import DocsHeader from './ui/DocsHeader';
 import Blob from '../ui/Blob';
 import Link from 'next/link';
-import '@/app/styles/Docs.css';
-import '@/app/docs/css/home.css';
+import styles from '@/app/styles/Docs.module.css';
+import homeStyles from '@/app/docs/css/home.module.css'; // if this is also converted to module
 
 import {
 	Rocket,
@@ -16,7 +16,6 @@ import {
 	Puzzle,
 	BookOpen,
 	Users,
-	ArrowRight,
 	ChevronRight,
 } from 'lucide-react';
 
@@ -35,13 +34,13 @@ const Docs = () => {
 	}, []);
 
 	return (
-		<div className='docs-container'>
+		<div className={styles.docsContainer}>
 			<Sidebar />
-			<div className='main-content'>
+			<div className={styles.mainContent}>
 				<DocsHeader />
 				<Blob size='500px' top='20px' opacity={0.1} />
 
-				<div className='content-section'>
+				<div className={styles.contentSection}>
 					<h2>Welcome to Star Dock</h2>
 					<p>
 						<strong>phoenix</strong> is a modern and lightweight UI component library
@@ -124,6 +123,11 @@ const Docs = () => {
 						<a href='https://github.com/StarDock-UI/stardock'>GitHub</a>
 					</p>
 
+					<Link href='/docs/getting-started' ref={rightLinkRef}>
+						<span className='Doc-button right-button'>
+							Getting Started <ChevronRight />
+						</span>
+					</Link>
 				</div>
 			</div>
 		</div>
