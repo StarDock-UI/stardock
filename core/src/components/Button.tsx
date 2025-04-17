@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 interface ButtonProps {
 	label: string;
-	variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
+	variant?: 'primary' | 'secondary' | 'outline' | 'link';
 	size?: 'small' | 'medium' | 'large';
 	disabled?: boolean;
 	loading?: boolean;
@@ -20,7 +20,8 @@ const Button: React.FC<ButtonProps> = ({
 	onClick,
 	className,
 }) => {
-	const baseStyles = 'rounded-lg transition-colors transition-medium cursor-pointer m-2';
+	const baseStyles =
+		'rounded-lg transition-colors transition-medium cursor-pointer m-2';
 
 	const sizeStyles = {
 		small: 'px-3 py-1 text-sm',
@@ -29,11 +30,10 @@ const Button: React.FC<ButtonProps> = ({
 	};
 
 	const variantStyles = {
-		primary: 'bg-grapeink text-snowlight hover:bg-violettease',
-		secondary: 'bg-slateveil text-snowlight hover:bg-duskshade',
-		outline: ' bg-firebud   border border-ghostveil text-duskshade hover:bg-ashcloud',
-		ghost: '   bg-forestink text-snowlight hover:bg-ashcloud',
-		link: ' bg-azurebreeze text-snowlight underline hover:text-deepwave',
+		primary: 'bg-grapeink text-snowlight',
+		secondary: 'bg-slateveil text-snowlight',
+		outline: ' bg-transparent border-1 border-grapeink text-grapeink',
+		link: 'bg-transparent text-grapeink border-0 underline',
 	};
 
 	const disabledStyles = 'opacity-50 cursor-disable';
@@ -51,7 +51,7 @@ const Button: React.FC<ButtonProps> = ({
 			)}
 		>
 			{loading ? (
-				<span className="inline-block animate-spin border border-t-transparent border-white rounded-full w-4 h-4 mr-2" />
+				<span className='inline-block animate-spin border border-t-transparent border-white rounded-full w-4 h-4 mr-2' />
 			) : null}
 			{label}
 		</button>

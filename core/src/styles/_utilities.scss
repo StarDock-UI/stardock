@@ -1,4 +1,166 @@
-@use './variables';
+$colors: (
+	// Neutral & Grayscale
+	snowlight: #f9f9f9,
+	ashcloud: #f1f1f1,
+	ghostveil: #e2e2e2,
+	mistgray: #d3d3d3,
+	steelfog: #b4b4b4,
+	smogtone: #969696,
+	slateveil: #777777,
+	duskshade: #5a5a5a,
+	charcoalink: #3c3c3c,
+	shadowcore: #1e1e1e,
+	abyssnight: #0a0a0a,
+
+	// Reds & Warm Tones
+	firebud: #ff6b6b,
+	emberglow: #e94e4e,
+	cherryblush: #cc3c3c,
+	duskrose: #aa2e2e,
+	rustflame: #883131,
+	bloodshade: #660f0f,
+
+	// Oranges & Ambers
+	sunsetgold: #ff9e4a,
+	amberroot: #ff7f0a,
+	apricrush: #f3691e,
+	caramelcider: #d15400,
+	copperflare: #b04500,
+	emberdust: #8a3700,
+
+	// Yellows
+	sunflowerpop: #ffe24a,
+	mellowhaze: #f8d245,
+	lemonzest: #f2bc22,
+	mustardspark: #d0a000,
+	honeydrip: #b78c00,
+	goldenharvest: #a37600,
+
+	// Greens
+	mintwhirl: #a8f0c6,
+	jadeflash: #5ce0aa,
+	verdantwave: #30c48c,
+	forestink: #20845e,
+	mossveil: #1b664b,
+	pinefog: #134534,
+
+	// Blues
+	skydream: #b5e3ff,
+	icemist: #86d1ff,
+	azurebreeze: #59b7f3,
+	cobaltstream: #3582c4,
+	deepwave: #24629f,
+	midnightsurf: #183f66,
+
+	// Purples
+	lavenderdust: #e4ccff,
+	violettease: #c69cff,
+	amethystlight: #a16ddc,
+	mysticshade: #814cb2,
+	grapeink: #612d91,
+	velvetvoid: #411b66,
+
+	// Pinks
+	bubblecharm: #ffc6dc,
+	rosequartz: #ff9fc4,
+	petalflush: #f76faa,
+	cherryshade: #d85287,
+	bloomtone: #b8386a,
+	blushdepth: #98234f,
+
+	// Beige & Browns
+	sandhue: #f6e7d4,
+	dunepearl: #e4d1b3,
+	lattefoam: #cdb089,
+	toffeetwist: #b38a5e,
+	oakshade: #916c3b,
+	darkbrew: #6e4c28,
+
+	// Funky & Fun
+	neonlime: #b0ff2d,
+	electricmango: #ffb200,
+	hyperblue: #3a60ff,
+	cyberpink: #ff49aa,
+	glitchgreen: #00ff8f,
+	spacemint: #73f9d6,
+	technoindigo: #7e4bff,
+	flameburst: #ff3366
+);
+
+$radius-scale: (
+	none: 0,
+	sm: 0.125rem,
+	rounded: 0.25rem,
+	md: 0.375rem,
+	lg: 0.5rem,
+	full: 9999px,
+);
+
+$spacing-unit: 0.25rem;
+
+$spacing-scale: (
+	0: 0,
+	1: $spacing-unit,
+	2: $spacing-unit * 2,
+	3: $spacing-unit * 3,
+	4: $spacing-unit * 4,
+	5: $spacing-unit * 5,
+	6: $spacing-unit * 6,
+	7: $spacing-unit * 7,
+	8: $spacing-unit * 8,
+);
+
+$text-scale: (
+	xs: 0.75rem,
+	sm: 0.875rem,
+	base: 1rem,
+	lg: 1.125rem,
+	xl: 1.25rem,
+	'2xl': 1.5rem,
+	'3xl': 1.875rem,
+	'4xl': 2.25rem,
+	'5xl': 3rem,
+	'6xl': 4rem,
+	'7xl': 5rem,
+	'8xl': 6rem,
+	'9xl': 7rem,
+	'10xl': 8rem,
+);
+
+$blur-scale: (
+	none: 0,
+	sm: 0.125rem,
+	md: 0.25rem,
+	lg: 0.5rem,
+	xl: 1rem,
+	'2xl': 2rem,
+	'3xl': 4rem,
+	'4xl': 8rem,
+	'5xl': 16rem,
+	'6xl': 32rem,
+	'7xl': 64rem,
+	'8xl': 128rem,
+	'9xl': 256rem,
+	'10xl': 512rem,
+);
+
+$transition-duration: (
+	none: 0s,
+	instant: 0.1s,
+	short: 0.2s,
+	medium: 0.3s,
+	long: 0.4s,
+	xl: 0.5s,
+	'2xl': 0.6s,
+	'3xl': 0.7s,
+	'4xl': 0.8s,
+	'5xl': 0.9s,
+	'6xl': 1s,
+	'7xl': 1.5s,
+	'8xl': 2s,
+	'9xl': 3s,
+	'10xl': 4s,
+);
 
 // Spacing
 
@@ -100,12 +262,23 @@
 .uppercase {
 	text-transform: uppercase;
 }
+
 .lowercase {
 	text-transform: lowercase;
 }
+
 .capitalize {
 	text-transform: capitalize;
 }
+
+.underline {
+	text-decoration: underline;
+}
+
+.text-none {
+	text-decoration: none;
+}
+
 .truncate {
 	overflow: hidden;
 	text-overflow: ellipsis;
