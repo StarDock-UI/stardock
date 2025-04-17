@@ -39,7 +39,7 @@ const Header = () => {
 					<Link href='/components' className='navLink'>
 						Components
 					</Link>
-					<Link href='https://github.com/StarDock-UI/stardock' className='navLink'>
+					<Link href='https://github.com/phoenix-UI/phoenix' className='navLink'>
 						Github
 					</Link>
 				</nav>
