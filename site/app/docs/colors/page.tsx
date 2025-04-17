@@ -7,7 +7,7 @@ import Link from 'next/link';
 import '@/app/styles/Docs.css';
 import '@/app/docs/css/home.css';
 
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 
 const Page = () => {
 	return (
