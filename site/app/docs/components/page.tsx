@@ -177,7 +177,7 @@ const ComponentsPage = () => {
 								<ChevronLeft /> Guides
 							</span>
 						</Link>
-						<Link href='/docs/Styles'>
+						<Link href='/docs/styles'>
 							<span className='Doc-button right-button'>
 								Styles <ChevronRight />
 							</span>
