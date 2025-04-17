@@ -8,10 +8,9 @@
 	left: 250px;
 	right: 0;
 	height: 80px;
-	background-color: #000000cc;
+	background-color: #0b0b0b;
 	color: white;
 	z-index: 1000;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .searchBar {
@@ -25,22 +24,22 @@
 	width: 250px;
 	border-radius: 6px;
 	outline: none;
-	font-size: 14px;
-	padding: 0.35rem 2.8rem 0.35rem 2.2rem; /* adjusted padding for smaller box */
+	font-size: 16px;
+	padding: 0.35rem 2.8rem 0.35rem 2.5rem;
 	border: none;
-	height: 32px; /* reduced from 40px */
+	height: 32px;
 	background-color: #1e1e1e;
 	color: white;
 }
 
 .searchIcon {
 	position: absolute;
-	left: 8px;
+	left: 10px;
 	top: 50%;
 	transform: translateY(-50%);
-	color: white;
-	width: 16px;
-	height: 16px;
+	color: #898989;
+	width: 20px;
+	height: 20px;
 }
 
 .keybind {
@@ -57,6 +56,7 @@
 	pointer-events: none;
 	user-select: none;
 }
+
 .iconToggle {
 	background: none;
 	border: none;
