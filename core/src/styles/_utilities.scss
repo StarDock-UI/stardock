@@ -442,10 +442,6 @@ $transition-duration: (
 	background-color: #000;
 }
 
-.bg-glass {
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
-}
 
 @each $key, $value in $colors {
 	.bg-#{$key} {

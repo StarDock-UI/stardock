@@ -1,3 +1,6 @@
+'use client';
+
+import React from 'react';
 import HeroSection from './ui/Hero';
 import Header from './ui/Header';
 import Blob from './ui/Blob';
@@ -8,11 +11,13 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<HeroSection />
-			<Features />
-			<div className='bottom-text'>
-				<h1>For devs who want simplicity and control.</h1>
-			</div>
+			<main>
+				<HeroSection />
+				<Features />
+				<section className='bottom-text' style={{ textAlign: 'center', margin: '4rem 0' }}>
+					<h1>For devs who want simplicity and control.</h1>
+				</section>
+			</main>
 			<Blob top='100px' left='10px' opacity={0.3} />
 			<Blob top='300px' right='10px' opacity={0.2} size='500px' />
 			<Blob top='1200px' left='300px' opacity={0.2} size='500px' />
