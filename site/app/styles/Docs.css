@@ -152,3 +152,123 @@
   }
   
   
+  .content-section scoped to a class
+.contentSection {
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 250px;
+  }
+  
+  .navigationButtons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding: 0 1rem;
+	width: 100%;
+  }
+  
+  /* Base link style with scoped class */
+  .DocButton {
+	display: inline-flex;
+	align-items: center; /* Vertically aligns the text and icon */
+	justify-content: center; /* Horizontally aligns the content */
+	gap: 6px; /* Adds space between the icon and the text */
+	color: #a678e2;
+	font-weight: 600;
+	text-decoration: none;
+	position: relative;
+	transition: all 0.3s ease;
+	font-size: 1rem;
+	padding: 6px 0;
+	cursor: pointer;
+  }
+  
+  .DocButton:hover {
+	transform: translateX(2px);
+  }
+  
+  .DocButton::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #a678e2;
+	transition: width 0.3s ease;
+  }
+  
+  .DocButton:hover::after {
+	width: 100%;
+  }
+  
+  .leftButton {
+	float: left;
+	text-align: left;
+  }
+  
+  .rightButton {
+	float: right;
+	text-align: right;
+  }
+  
+  /* Main layout scoped to a class */
+  .docsContainer {
+	display: flex;
+	margin-left: 250px;
+	flex-direction: column;
+	padding: 2rem;
+	min-height: 100vh;
+  }
+  
+  .mainContent {
+	flex: 1;
+	padding: 2rem;
+  }
+  
+  .contentSection {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 1rem;
+  }
+  
+  .heroTitle {
+	font-size: 28px;
+	margin-bottom: 1rem;
+  }
+  
+  .sectionTitle {
+	font-size: 22px;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .subSectionTitle {
+	font-size: 18px;
+	margin-top: 1.5rem;
+  }
+  
+  .paragraph {
+	margin-bottom: 1rem;
+  }
+  
+  .list {
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+  }
+  
+  .codeSnippet {
+	background: #615f5f;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-family: monospace;
+  }
+  
