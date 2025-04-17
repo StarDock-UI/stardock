@@ -3,8 +3,10 @@
 }
 
 .featuresTitle {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	margin-bottom: 5rem;
+	text-align: center;
+	color: #858585;
 }
 
 .largeRow {
@@ -21,12 +23,13 @@
 }
 
 .featureCard {
-	background-color: #1d1d1d;
 	border-radius: 1rem;
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 	text-align: center;
 	padding: 2rem;
 	transition: transform 0.3s ease;
+	background-color: #1d1d1d49;
+	backdrop-filter: blur(30px);
 }
 
 .featureCard:hover {
@@ -38,12 +41,6 @@
 	border-radius: 0.75rem;
 	margin-bottom: 1.5rem;
 }
-
-/* .largeCard {
-}
-
-.smallCard {
-} */
 
 .featureCard h3 {
 	font-size: 1.25rem;
