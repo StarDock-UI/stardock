@@ -26,7 +26,7 @@ const StylesPage = () => {
 			if (e.key === 'ArrowLeft') {
 				router.push('/docs/components');
 			} else if (e.key === 'ArrowRight') {
-				router.push('/docs/fonts');
+				router.push('/docs/configuration');
 			}
 		};
 
@@ -283,10 +283,10 @@ const StylesPage = () => {
 						<Link href='/docs/styles'>
 							<span className='Doc-button left-button'> <ChevronLeft/> Components</span>
 						</Link>
-						<Link href='/docs/fonts'>
+						<Link href='/docs/configuration'>
 							
 							<span className='Doc-button right-button'>
-															Fonts <ChevronRight/>
+															Configuration <ChevronRight/>
 														</span>
 						</Link>
 					</div>
