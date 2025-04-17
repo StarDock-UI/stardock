@@ -36,7 +36,7 @@ const Header = () => {
 					<Link href='/docs' className='navLink'>
 						Docs
 					</Link>
-					<Link href='/components' className='navLink'>
+					<Link href='/docs/components' className='navLink'>
 						Components
 					</Link>
 					<Link href='https://github.com/phoenix-UI/phoenix' className='navLink'>
