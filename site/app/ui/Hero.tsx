@@ -7,9 +7,13 @@ import { Star } from 'lucide-react';
 import Image from 'next/image';
 
 const Hero = () => {
+	const [copied, setCopied] = useState(false);
+
 	const handleCopy = () => {
-		const textToCopy = 'npm i stardock@latest';
+		const textToCopy = 'npm i phoenix@latest';
 		navigator.clipboard.writeText(textToCopy);
+		setCopied(true);
+		setTimeout(() => setCopied(false), 2000);
 	};
 
 	return (
@@ -43,13 +47,16 @@ const Hero = () => {
 
 				<div className='copy-wrapper'>
 					<code className='copy-block' id='code-block' onClick={handleCopy}>
-						npm i stardock@latest
+						npm i phoenix@latest
 					</code>
+					{copied && <span className='copy-popup'>Copied!</span>}
 					<Copy />
 				</div>
 			</div>
 			<div className='right'>
-				<Image src='/code.png' alt='code' width={600} height={300} />
+				<div className='code-block'>
+					<Image src='/code.png' alt='code' width={600} height={300} />
+				</div>
 			</div>
 		</section>
 	);

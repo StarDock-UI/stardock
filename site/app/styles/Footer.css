@@ -1,105 +1,57 @@
-.footer {
-	background-color: #000000;
+.footer-container {
+  background-color: rgba(29, 29, 29, 0.5);
+  backdrop-filter: blur(30px);
+  color: white;
+  padding: 4rem 2rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
 }
 
-.footer-wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
+.footer-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.footer-brand {
-	flex: 1 1 300px;
-	margin-bottom: 5rem;
+.footer-subtitle {
+  font-size: 1.25rem;
+  color: #d1d5db;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.footer-brand h1 {
-	font-size: 2rem;
-	margin-bottom: 0.5rem;
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.25rem;
 }
 
-.footer-brand p {
-	color: #a1a1aa;
-	font-size: 1rem;
-	margin-bottom: 0.5rem;
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer-columns {
-	display: flex;
+.footer-links a:hover {
+  color: #38bdf8;
 }
 
-.footer-col {
-	flex: 1;
-	min-width: 150px;
-	text-align: left;
+.footer-credits {
+  font-size: 1rem;
+  color: #a1a1aa;
+  max-width: 700px;
+  line-height: 1.8;
 }
 
-.footer-col h3 {
-	font-size: 1.1rem;
-	margin-bottom: 1rem;
-}
-
-.footer-col ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.footer-col li {
-	margin-bottom: 0.5rem;
-}
-
-.footer-col a,
-.email-link {
-	color: #b5b5b5;
-	text-decoration: none;
-	font-size: 0.95rem;
-	transition: all 0.2s ease-in-out;
-}
-
-.footer-col a:hover,
-.email-link:hover {
-	color: #ffffff;
-	transform: translateX(4px);
-}
-
-/* ===== Footer Bottom ===== */
-.footer-bottom {
-	text-align: center;
-	margin-top: 3rem;
-	font-size: 0.9rem;
-	color: #777;
-	border-top: 1px solid #333;
-	padding-top: 1.5rem;
-}
-
-/* ===== Responsive Styles ===== */
-@media (max-width: 768px) {
-	.footer-wrapper {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.footer-columns {
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.footer-col {
-		margin-bottom: 1.5rem;
-	}
-
-	.footer-bottom {
-		margin-top: 2rem;
-	}
-}
-
-/* Credits link styling */
-.credits a {
-	color: #a1a1aa;
-	text-decoration: none;
-	transition: color 0.2s ease;
-}
-
-.credits a:hover {
-	color: #ffffff;
+.footer-heart {
+  color: #ef4444;
+  margin: 0 6px;
+  vertical-align: middle;
+  transform: scale(1.5);
 }

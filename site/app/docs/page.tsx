@@ -43,14 +43,14 @@ const Docs = () => {
 				<div className={styles.contentSection}>
 					<h2>Welcome to Star Dock</h2>
 					<p>
-						<strong>StarDock</strong> is a modern and lightweight UI component library
+						<strong>phoenix</strong> is a modern and lightweight UI component library
 						that helps you build beautiful web interfaces faster. Inspired by the best
 						of Tailwind and Bootstrap, but built for developers who want flexibility
 						without the bloat.
 					</p>
 
 					<h2>
-						<Paintbrush size={20} /> Why StarDock?
+						<Paintbrush size={20} /> Why phoenix?
 					</h2>
 					<ul>
 						<li>
@@ -93,16 +93,16 @@ const Docs = () => {
 					</p>
 					<ul>
 						<li>
-							<Link href='/docs/components/buttons'>Buttons</Link>
+							<Link href='/docs/components'>Buttons</Link>
 						</li>
 						<li>
-							<Link href='/docs/components/forms'>Form Elements</Link>
+							<Link href='/docs/components'>Form Elements</Link>
 						</li>
 						<li>
-							<Link href='/docs/components/layouts'>Grid & Layouts</Link>
+							<Link href='/docs/components'>Grid & Layouts</Link>
 						</li>
 						<li>
-							<Link href='/docs/components/alerts'>Alerts & Notifications</Link>
+							<Link href='/docs/components'>Alerts & Notifications</Link>
 						</li>
 					</ul>
 
@@ -120,12 +120,11 @@ const Docs = () => {
 					</h2>
 					<p>
 						Questions? Feedback? Want to contribute? Join us on{' '}
-						<a href='https://github.com/your-repo/your-project'>GitHub</a> or connect
-						on <a href='/community'>Community Chat</a>.
+						<a href='https://github.com/StarDock-UI/stardock'>GitHub</a>
 					</p>
 
 					<Link href='/docs/getting-started' ref={rightLinkRef}>
-						<span className={`${styles.docButton} ${styles.rightButton}`}>
+						<span className='Doc-button right-button'>
 							Getting Started <ChevronRight />
 						</span>
 					</Link>

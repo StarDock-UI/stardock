@@ -52,7 +52,7 @@ const ComponentsPage = () => {
 						Components Overview
 					</h2>
 					<p>
-						StarDock provides a set of pre-built, themeable, and flexible UI
+						phoenix provides a set of pre-built, themeable, and flexible UI
 						components to help you build interfaces faster and better. Below is an
 						overview of available components and how to start using them.
 					</p>
@@ -167,7 +167,7 @@ const ComponentsPage = () => {
 						</li>
 					</ul>
 
-					{/* Navigation Buttons */}
+					
 					<div
 						className='navigation-buttons'
 						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}
@@ -177,7 +177,7 @@ const ComponentsPage = () => {
 								<ChevronLeft /> Guides
 							</span>
 						</Link>
-						<Link href='/docs/styles'>
+						<Link href='/docs/Styles'>
 							<span className='Doc-button right-button'>
 								Styles <ChevronRight />
 							</span>

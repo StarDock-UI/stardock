@@ -18,7 +18,6 @@ const Page = () => {
 				<Blob size='500px' top='20px' opacity={0.1} />
 
 				<div className="container">
-					<h1>Color Classes</h1>
 					<table className="color-table">
 						<thead>
 							<tr>

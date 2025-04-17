@@ -1,33 +1,42 @@
 import React from 'react';
 import Link from 'next/link';
-import '../styles/Footer.css';
 import { Heart } from 'lucide-react';
+import '../styles/Footer.css';
 
 const Footer = () => {
 	return (
-		<footer>
-			<div>
-				<h1>phoenix</h1>
-				<p>a css library that does just enough.</p>
-				<p>
-					Made with <Heart /> by{' '}
-					<Link href='https://github.com/diyatripathi673'>@Diya</Link> -{' '}
-					<Link href='https://github.com/rohan-gupta-14'>@Rohan</Link> -{' '}
-					<Link href='https://github.com/Mahimabisht10'>@Mahima</Link> -{' '}
-					<Link href='https://github.com/nickkcode'>@Nikhil</Link>
-				</p>
+		<footer className='footer-container'>
+			<div className='footer-main'>
+				<h1 className='footer-title'>PhoenixUI</h1>
+				<p className='footer-subtitle'>A CSS library that does just enough.</p>
 			</div>
-			<div>
-				<div>
-					<Link href='/docs/getting-started'>Get-Started</Link>
-					<Link href='/docs/components'>Components</Link>
-					<Link href='/docs/styles'>Styles</Link>
-					<Link href='/docs/fonts'>Fonts</Link>
-				</div>
+
+			<div className='footer-links'>
+				<Link href='/docs/getting-started'>Getting Started</Link>
+				<Link href='/docs/components'>Components</Link>
+				<Link href='/docs/styles'>Styles</Link>
+				<Link href='/docs/fonts'>Fonts</Link>
 			</div>
-			<div>
-				<p>Copyright 2025 @</p>
-			</div>
+
+			<p className='footer-credits'>
+				Made with{' '}
+				<span className='footer-heart'>
+					<Heart size={16} />
+				</span>{' '}
+				by{' '}
+				<Link href='https://github.com/diyatripathi673' target='_blank'>
+					@Diya
+				</Link>{' '}
+				<Link href='https://github.com/rohan-gupta-14' target='_blank'>
+					@Rohan
+				</Link>{' '}
+				<Link href='https://github.com/Mahimabisht10' target='_blank'>
+					@Mahima
+				</Link>{' '}
+				<Link href='https://github.com/nickkcode' target='_blank'>
+					@Nikhil
+				</Link>
+			</p>
 		</footer>
 	);
 };
