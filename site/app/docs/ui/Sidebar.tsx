@@ -29,7 +29,6 @@ const Sidebar = () => {
 		{ href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
 		{ href: '/docs/components', label: 'Components', icon: <Box /> },
 		{ href: '/docs/styles', label: 'styles', icon: <Palette /> },
-		{ href: '/docs/fonts', label: 'Fonts', icon: <Type /> },
 		{ href: '/docs/configuration', label: 'Configuration', icon: <Settings /> },
 	];
 
