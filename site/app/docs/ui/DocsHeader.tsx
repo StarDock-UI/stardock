@@ -37,13 +37,13 @@ const DocsHeader = () => {
 					<span className='keybind'>Ctrl + K</span>
 				</div>
 
-				<button
+				{/* <button
 					onClick={() => setDarkMode(!darkMode)}
 					className='iconToggle'
 					aria-label='Toggle Theme'
 				>
 					{darkMode ? <Sun className='toggleIcon' /> : <Moon className='toggleIcon' />}
-				</button>
+				</button> */}
 			</div>
 		</div>
 	);
