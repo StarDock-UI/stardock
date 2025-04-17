@@ -52,8 +52,8 @@ const GuidesPage = () => {
 					</h2>
 					<p>
 						Learn how to unlock the full potential of phoenix with these step-by-step
-						guides. Whether you're just getting started or looking to customize
-						components for production, we've got you covered.
+						guides. Whether you&apos;re just getting started or looking to customize
+						components for production, we&apos;ve got you covered.
 					</p>
 
 					<h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

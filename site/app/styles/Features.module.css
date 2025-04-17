@@ -54,5 +54,7 @@
 }
 
 .transparent {
-	mix-blend-mode: screen;
+	mix-blend-mode: lighten;
+	position: relative;
+	z-index: 1;
 }
