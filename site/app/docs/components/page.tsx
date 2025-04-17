@@ -7,6 +7,7 @@ import Blob from '../../ui/Blob';
 import Link from 'next/link';
 import '@/app/styles/Docs.css';
 import '@/app/docs/css/home.css';
+import Image from 'next/image';
 
 import {
 	ChevronLeft,
@@ -66,11 +67,22 @@ const ComponentsPage = () => {
 					</h2>
 					<ul>
 						<li>
-							<Link href='/docs/components/buttons'>
+							
 								<strong>Button</strong>
-							</Link>{' '}
-							– Primary, Secondary, Outlined, Ghost, Icon Buttons.
-						</li>
+                            – Primary, Secondary, Outlined Buttons.
+                              <div>
+                                <Image src='/button1.jpg' alt='' width={100} height={100}/> 
+                                <Image src='/button2.jpg' alt='' width={100} height={100}/>
+                                <Image src='/button3.jpg' alt='' width={100} height={100}/>
+                                <Image src='/button4.jpg' alt='' width={100} height={100}/>
+                                 </div>
+                              </li>
+                              <li>
+                                <strong>Breadcrums</strong>
+                                <div>
+                                <Image src='/breadcrums.jpg' alt='' width={500} height={100}/>
+                                </div>
+                              </li>
 						<li>
 							<Link href='/docs/components/forms'>
 								<strong>Form Elements</strong>
