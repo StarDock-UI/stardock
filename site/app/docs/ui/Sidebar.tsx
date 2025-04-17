@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import {
 	BookOpen,
 	Box,
+	Brush,
 	CheckCircle2,
 	Code,
 	Home,
@@ -28,8 +29,8 @@ const Sidebar = () => {
 		},
 		{ href: '/docs/guides', label: 'Guides', icon: <BookOpen /> },
 		{ href: '/docs/components', label: 'Components', icon: <Box /> },
-		{ href: '/docs/Styles', label: 'Styles', icon: <Palette /> },
-		{ href: '/docs/colors', label: 'colors', icon: <Settings /> },
+		{ href: '/docs/Styles', label: 'Styles', icon: <Brush/> },
+		{ href: '/docs/colors', label: 'Colors', icon: <Palette /> },
 	];
 
 	return (

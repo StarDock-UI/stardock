@@ -199,6 +199,17 @@ const Page = () => {
         </div>
       </div>
 			</div>
+      <div
+						className='navigation-buttons'
+						style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}
+					>
+						<Link href='/docs'>
+							<span className='Doc-button left-button'>
+								<ChevronLeft /> Home
+							</span>
+						</Link>
+					
+					</div>
 		</div>
 	);
 };
