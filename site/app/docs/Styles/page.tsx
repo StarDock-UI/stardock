@@ -283,10 +283,10 @@ const StylesPage = () => {
 						<Link href='/docs/styles'>
 							<span className='Doc-button left-button'> <ChevronLeft/> Components</span>
 						</Link>
-						<Link href='/docs/configuration'>
+						<Link href='/docs/colors'>
 							
 							<span className='Doc-button right-button'>
-															Configuration <ChevronRight/>
+															Colors <ChevronRight/>
 														</span>
 						</Link>
 					</div>
